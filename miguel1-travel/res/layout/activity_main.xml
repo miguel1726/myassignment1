@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <ListView
+        android:id="@+id/List_of_claims"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/app_title" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/app_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/List_of_claims"
+        android:layout_marginRight="29dp"
+        android:text="@string/claims"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="@dimen/title" />
+
+    <Button
+        android:id="@+id/configure_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/List_of_claims"
+        android:layout_alignParentRight="true"
+        android:text="@string/options" />
+
+</RelativeLayout>
