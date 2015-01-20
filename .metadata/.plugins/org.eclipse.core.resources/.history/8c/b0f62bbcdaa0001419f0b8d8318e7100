@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/submit_claim_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="18dp"
+        android:text="SUBMIT CLAIM"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/select_claim_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/submit_claim_title"
+        android:layout_below="@+id/submit_claim_title"
+        android:layout_marginTop="22dp"
+        android:text="Small Text"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Spinner
+        android:id="@+id/select_c_sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/select_claim_submit"
+        android:layout_below="@+id/select_claim_submit"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/submit_claim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/select_c_sub"
+        android:layout_below="@+id/select_c_sub"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="18dp"
+        android:text="SUBMIT" />
+
+    <TextView
+        android:id="@+id/Submitted_options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/select_c_sub"
+        android:layout_below="@+id/submit_claim"
+        android:layout_marginTop="30dp"
+        android:text="Small Text"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>

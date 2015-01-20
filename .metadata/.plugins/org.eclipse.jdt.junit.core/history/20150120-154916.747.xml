@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testrun name="Travel_Expense_Manager_test" project="Travel_Expense_Manager_test" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="ultimateavd [emulator-5554]" time="0.187">
+    <testsuite name="ca.ualberta.cs.miguel1_travel.test.claimtest" time="0.187">
+      <testcase name="testClaim " classname="ca.ualberta.cs.miguel1_travel.test.claimtest" time="0.187"/>
+    </testsuite>
+  </testsuite>
+</testrun>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/add_claim_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="23dp"
+        android:text="@string/new_claim"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/new_claim_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/add_claim_title"
+        android:layout_below="@+id/add_claim_title"
+        android:layout_marginTop="14dp"
+        android:text="@string/destination"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/new_claim_title"
+        android:layout_below="@+id/new_claim_title"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/date_from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_below="@+id/editText1"
+        android:text="@string/from"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/date_from_insert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/date_from"
+        android:layout_below="@+id/date_from"
+        android:ems="10"
+        android:hint="@string/yyyy_mm_dd"
+        android:inputType="date" />
+
+    <TextView
+        android:id="@+id/date_to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/date_from_insert"
+        android:layout_below="@+id/date_from_insert"
+        android:text="@string/to"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/date_to_insert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/date_to"
+        android:layout_below="@+id/date_to"
+        android:ems="10"
+        android:hint="@string/yyyy_mm_dd"
+        android:inputType="date" />
+
+    <TextView
+        android:id="@+id/descriptio_claim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/date_to_insert"
+        android:layout_below="@+id/date_to_insert"
+        android:text="@string/reason_for_trip"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/reason_claim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/descriptio_claim"
+        android:layout_below="@+id/descriptio_claim"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="@string/business_pleasure_"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/add_new_claim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/reason_claim"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="37dp"
+        android:text="@string/add_new_claim" />
+
+</RelativeLayout>

@@ -1,0 +1,32 @@
+package ca.ualberta.cs.miguel1_travel;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.view.Menu;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
+public class MainActivity extends Activity {
+
+	//spinner code taken from youtube video: Android spinner example, by raghav shetty, link watch?v=o7Om-iUoiio on jan 16 2015
+	Spinner cat;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        
+        cat=(Spinner) findViewById(R.id.spinner1);
+        ArrayAdapter<CharSequence> ar= ArrayAdapter.createFromResource(this,R.array.Category, android.R.layout.simple_list_item_1);
+        ar.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
+        cat.setAdapter(ar);
+        
+    }
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
+    }
+    
+}

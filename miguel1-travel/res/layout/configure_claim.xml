@@ -71,6 +71,6 @@
         android:layout_alignParentRight="true"
         android:layout_below="@+id/delete_claim"
         android:layout_marginTop="16dp"
-        android:text="VIEW EXPENSES" />
+        android:text="@string/view_expenses" />
 
 </RelativeLayout>

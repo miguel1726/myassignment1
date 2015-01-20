@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">"miguel1-travel "</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="options">OPTIONS</string>
+    <string name="claims">CLAIMS</string>
+    <string name="delete">DELETE</string>
+    <string name="add">ADD</string>
+    <string name="edit">EDIT</string>
+    <string name="mail">MAIL</string>
+    <string name="submit">SUBMIT</string>
+    <string name="claim_options">Claim Options</string>
+    <string name="new_claim">NEW CLAIM</string>
+    <string name="destination">Destination</string>
+
+</resources>

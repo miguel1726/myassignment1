@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testrun name="Travel_Expense_Manager_test" project="Travel_Expense_Manager_test" tests="1" started="1" failures="1" errors="0" ignored="0">
+  <testsuite name="ultimateavd [emulator-5554]" time="0.001">
+    <testsuite name="ca.ualberta.cs.miguel1_travel.test.claimtest" time="0.001">
+      <testcase name="testClaim " classname="ca.ualberta.cs.miguel1_travel.test.claimtest" time="0.001">
+        <failure>junit.framework.AssertionFailedError: Claim is not equal&#13;
+at ca.ualberta.cs.miguel1_travel.test.claimtest.testClaim(claimtest.java:10)&#13;
+at java.lang.reflect.Method.invokeNative(Native Method)&#13;
+at android.test.AndroidTestRunner.runTest(AndroidTestRunner.java:190)&#13;
+at android.test.AndroidTestRunner.runTest(AndroidTestRunner.java:175)&#13;
+at android.test.InstrumentationTestRunner.onStart(InstrumentationTestRunner.java:555)&#13;
+at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1661)&#13;
+
+</failure>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

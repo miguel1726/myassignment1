@@ -25,6 +25,30 @@
     <string name="date">Date</string>
     <string name="description">Description</string>
     <string name="amount">Amount</string>
-    <string name="currency_type">Currency type</string>
+    <string name="currency_type">Currency Type</string>
+    <string name="view_expenses">VIEW EXPENSES</string>
+    <string name="edit_claim">EDIT CLAIM</string>
+    <string name="select_claim_">"Select Claim "</string>
+    <string name="edit_destination">Edit Destination</string>
+    <string name="edit_from">Edit From</string>
+    <string name="edit_to">Edit To</string>
+    <string name="edit_reason">Edit Reason</string>
+    <string name="mail_claim">MAIL CLAIM</string>
+    <string name="select_claim">Select Claim</string>
+    <string name="email_to">Email To</string>
+    <string name="example_gmail_com">example@gmail.com</string>
+    <string name="send">SEND</string>
+    <string name="submit_claim">SUBMIT CLAIM</string>
+    <string name="submitted_options">Submitted Options</string>
+    <string name="pending">Pending</string>
+    <string name="returned">Returned</string>
+    <string name="approved">Approved</string>
+    <string name="save">SAVE</string>
+    <string name="delete_claim">DELETE CLAIM</string>
+    <string name="expenses">Expenses</string>
+    <string name="total">Total</string>
+    <string name="select_expense">Select Expense</string>
+    <string name="delete_expense">DELETE EXPENSE</string>
+    <string name="edit_expense">EDIT EXPENSE</string>
 
 </resources>

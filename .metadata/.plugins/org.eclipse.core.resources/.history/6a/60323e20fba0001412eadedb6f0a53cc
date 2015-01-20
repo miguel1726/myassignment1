@@ -1,0 +1,27 @@
+package ca.ualberta.cs.miguel1_travel;
+
+import java.util.ArrayList;
+import java.util.Collection;
+	
+
+public class Claim_List {
+	protected ArrayList<Claim> claimList;
+	
+	public ClaimList() {
+		claimList=new ArrayList<Claim>();
+		
+	}
+
+	public Collection<Claim> getClaims() {
+		// TODO Auto-generated method stub
+		return claimList;
+	}
+
+	public static void addClaim(Claim testClaim) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
+
+}

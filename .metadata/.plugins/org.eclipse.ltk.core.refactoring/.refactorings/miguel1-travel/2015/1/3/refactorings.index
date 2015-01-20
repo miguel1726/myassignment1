@@ -1,0 +1,38 @@
+1421437403899	Rename field 'button1'
+1421437697084	Rename field 'button1'
+1421438670238	Extracts string 'Options' into R.string.options
+1421438680482	Extracts string 'CLAIMS' into R.string.claims
+1421438691831	Extracts string 'DELETE' into R.string.delete
+1421438699247	Extracts string 'ADD' into R.string.add
+1421438715817	Extracts string 'EDIT' into R.string.edit
+1421438730364	Extracts string 'MAIL' into R.string.mail
+1421438737987	Extracts string 'SUBMIT' into R.string.submit
+1421438745233	Extracts string 'Claim Options' into R.string.claim_options
+1421438815157	Rename field 'app_title'
+1421439224595	Extracts string 'OPTIONS' into R.string.options
+1421439853332	Extracts string 'NEW CLAIM' into R.string.new_claim
+1421439861854	Extracts string 'Destination' into R.string.destination
+1421439871271	Extracts string 'From' into R.string.from
+1421439885534	Extracts string 'YYYY-MM-DD' into R.string.yyyy_mm_dd
+1421439893820	Extracts string 'To' into R.string.to
+1421439908937	Extracts string 'Reason for trip' into R.string.reason_for_trip
+1421439917770	Extracts string 'Business, Pleasure...' into R.string.business_pleasure_
+1421439928110	Extracts string 'ADD NEW CLAIM' into R.string.add_new_claim
+1421440612522	Rename field 'textView1'
+1421440688569	Rename field 'editText1'
+1421440745837	Rename field 'textView2'
+1421444191069	Rename field 'textView3'
+1421444216763	Rename field 'editText2'
+1421444241354	Rename field 'textView4'
+1421444313747	Rename field 'editText3'
+1421444340039	Rename field 'textView5'
+1421444370122	Rename field 'spinner2'
+1421444542689	Rename field 'button1'
+1421444580539	Extracts string 'YYYY-MM-DD' into R.string.yyyy_mm_dd
+1421444588414	Extracts string 'Category' into R.string.category
+1421444595882	Extracts string 'NEW EXPENSE' into R.string.new_expense
+1421444602881	Extracts string 'Date' into R.string.date
+1421444612027	Extracts string 'Description' into R.string.description
+1421444619356	Extracts string 'Amount' into R.string.amount
+1421444626454	Extracts string 'Currency type' into R.string.currency_type
+1421444635874	Extracts string 'ADD' into R.string.add

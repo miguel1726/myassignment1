@@ -1,0 +1,15 @@
+package ca.ualberta.cs.miguel1_travel;
+
+import java.util.Collection;
+	
+
+public class Claim_List {
+
+	public Collection<Claim> getClaims() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
+
+}

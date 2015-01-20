@@ -1,8 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical" >
-    
+    android:layout_height="match_parent" >
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/submit_claim_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="18dp"
+        android:text="@string/submit_claim"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/select_claim_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/submit_claim_title"
+        android:layout_below="@+id/submit_claim_title"
+        android:layout_marginTop="22dp"
+        android:text="@string/select_claim"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Spinner
+        android:id="@+id/select_c_sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/select_claim_submit"
+        android:layout_below="@+id/select_claim_submit"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/submit_claim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/select_c_sub"
+        android:layout_below="@+id/select_c_sub"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="18dp"
+        android:text="@string/submit" />
+
+    <TextView
+        android:id="@+id/Submitted_options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/select_c_sub"
+        android:layout_below="@+id/submit_claim"
+        android:layout_marginTop="30dp"
+        android:text="@string/submitted_options"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <RadioButton
+        android:id="@+id/pending_option"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/submit_claim"
+        android:layout_below="@+id/Submitted_options"
+        android:layout_marginTop="15dp"
+        android:text="@string/pending" />
+
+    <RadioButton
+        android:id="@+id/returned_option"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pending_option"
+        android:layout_below="@+id/pending_option"
+        android:text="@string/returned" />
+
+    <RadioButton
+        android:id="@+id/approved_option"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/returned_option"
+        android:layout_below="@+id/returned_option"
+        android:text="@string/approved" />
+
+    <Button
+        android:id="@+id/save_option"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/returned_option"
+        android:layout_marginLeft="22dp"
+        android:layout_toRightOf="@+id/submit_claim_title"
+        android:text="@string/save" />
+
+</RelativeLayout>

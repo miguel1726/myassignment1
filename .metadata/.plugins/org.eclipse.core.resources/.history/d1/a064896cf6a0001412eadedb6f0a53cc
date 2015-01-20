@@ -1,0 +1,14 @@
+package ca.ualberta.cs.miguel1_travel;
+
+public class Claim {
+
+	public Claim(String claimname) {
+		// TODO Auto-generated constructor stub
+	}
+
+	public String getDestination() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

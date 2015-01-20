@@ -1,0 +1,52 @@
+1421777117075	Rename field 'new_exp_date_ins'
+1421777307718	Extracts string 'VIEW EXPENSES' into R.string.view_expenses
+1421779691676	Extracts string 'EDIT CLAIM' into R.string.edit_claim
+1421779699540	Extracts string 'Select Claim ' into R.string.select_claim_
+1421779708757	Extracts string 'Edit Destination' into R.string.edit_destination
+1421779752806	Extracts string 'Edit From' into R.string.edit_from
+1421779761480	Extracts string 'YYYY-MM-DD' into R.string.yyyy_mm_dd
+1421779773805	Extracts string 'Edit To' into R.string.edit_to
+1421779788199	Extracts string 'Edit Reason' into R.string.edit_reason
+1421779799786	Extracts string 'EDIT' into R.string.edit
+1421780049488	Delete element
+1421780202628	Rename field 'spinner1'
+1421780338251	Extracts string 'MAIL CLAIM' into R.string.mail_claim
+1421780345427	Extracts string 'Select Claim' into R.string.select_claim
+1421780360002	Extracts string 'Email To' into R.string.email_to
+1421780373937	Extracts string 'example@gmail.com' into R.string.example_gmail_com
+1421780381905	Extracts string 'SEND' into R.string.send
+1421780569480	Delete element
+1421781608933	Extracts string 'SUBMIT CLAIM' into R.string.submit_claim
+1421781615810	Extracts string 'Select Claim' into R.string.select_claim
+1421781629190	Extracts string 'SUBMIT' into R.string.submit
+1421782172335	Extracts string 'Submitted Options' into R.string.submitted_options
+1421782180585	Extracts string 'Pending' into R.string.pending
+1421782188115	Extracts string 'Returned' into R.string.returned
+1421782195780	Extracts string 'Approved' into R.string.approved
+1421782203535	Extracts string 'SAVE' into R.string.save
+1421782266358	Delete element
+1421782300292	Delete element
+1421782535403	Extracts string 'DELETE' into R.string.delete
+1421782567868	Extracts string 'Select Claim' into R.string.select_claim
+1421782577207	Extracts string 'DELETE CLAIM' into R.string.delete_claim
+1421782602732	Delete element
+1421783374262	Extracts string 'VIEW EXPENSES' into R.string.view_expenses
+1421783382581	Extracts string 'Select Claim' into R.string.select_claim
+1421783393302	Extracts string 'OPTIONS' into R.string.options
+1421783400889	Extracts string 'Expenses' into R.string.expenses
+1421783412266	Extracts string 'Total' into R.string.total
+1421783596096	Extracts string 'OPTIONS' into R.string.options
+1421783603202	Extracts string 'ADD' into R.string.add
+1421783610874	Extracts string 'EDIT' into R.string.edit
+1421783620585	Extracts string 'DELETE' into R.string.delete
+1421784235934	Extracts string 'DELETE' into R.string.delete
+1421784244379	Extracts string 'Select Expense' into R.string.select_expense
+1421784253039	Extracts string 'DELETE EXPENSE' into R.string.delete_expense
+1421785276145	Extracts string 'EDIT EXPENSE' into R.string.edit_expense
+1421785282793	Extracts string 'Select Expense' into R.string.select_expense
+1421785294682	Extracts string 'Date' into R.string.date
+1421785303742	Extracts string 'Category' into R.string.category
+1421785313353	Extracts string 'Description' into R.string.description
+1421785321012	Extracts string 'Amount' into R.string.amount
+1421785329083	Extracts string 'Currency Type' into R.string.currency_type
+1421785338568	Extracts string 'EDIT' into R.string.edit

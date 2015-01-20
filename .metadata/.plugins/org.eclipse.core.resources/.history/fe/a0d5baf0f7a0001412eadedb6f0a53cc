@@ -1,0 +1,12 @@
+package ca.ualberta.cs.miguel1_travel.test;
+
+import ca.ualberta.cs.miguel1_travel.Claim_List;
+import junit.framework.TestCase;
+
+public class claimlisttest extends TestCase {
+	public void testClaimList(){
+			Claim_List claimlist=new Claim_List();
+			Collection<Claim> claims=Claim_List.getClaims();
+			assertTrue("Empty claim list", claims.size()==0);
+	}
+}

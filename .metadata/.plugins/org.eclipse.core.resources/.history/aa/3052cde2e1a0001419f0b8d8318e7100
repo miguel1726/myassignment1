@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">"miguel1-travel "</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="options">OPTIONS</string>
+    <string name="claims">CLAIMS</string>
+    <string name="delete">DELETE</string>
+    <string name="add">ADD</string>
+    <string name="edit">EDIT</string>
+    <string name="mail">MAIL</string>
+    <string name="submit">SUBMIT</string>
+    <string name="claim_options">Claim Options</string>
+    <string name="new_claim">NEW CLAIM</string>
+    <string name="destination">Destination</string>
+    <string name="from">From</string>
+    <string name="yyyy_mm_dd">YYYY-MM-DD</string>
+    <string name="to">To</string>
+    <string name="reason_for_trip">Reason for trip</string>
+    <string name="business_pleasure_">Business, Pleasure...</string>
+    <string name="add_new_claim">ADD NEW CLAIM</string>
+    <string name="category">Category</string>
+    <string name="new_expense">NEW EXPENSE</string>
+    <string name="date">Date</string>
+    <string name="description">Description</string>
+    <string name="amount">Amount</string>
+    <string name="currency_type">Currency type</string>
+    <string name="view_expenses">VIEW EXPENSES</string>
+    <string name="edit_claim">EDIT CLAIM</string>
+    <string name="select_claim_">"Select Claim "</string>
+    <string name="edit_destination">Edit Destination</string>
+    <string name="edit_from">Edit From</string>
+    <string name="edit_to">Edit To</string>
+    <string name="edit_reason">Edit Reason</string>
+    <string name="mail_claim">MAIL CLAIM</string>
+    <string name="select_claim">Select Claim</string>
+    <string name="email_to">Email To</string>
+    <string name="example_gmail_com">example@gmail.com</string>
+    <string name="send">SEND</string>
+    <string name="submit_claim">SUBMIT CLAIM</string>
+    <string name="submitted_options">Submitted Options</string>
+    <string name="pending">Pending</string>
+    <string name="returned">Returned</string>
+    <string name="approved">Approved</string>
+    <string name="save">SAVE</string>
+    <string name="delete_claim">DELETE CLAIM</string>
+    <string name="expenses">Expenses</string>
+    <string name="total">Total</string>
+    <string name="select_expense">Select Expense</string>
+    <string name="delete_expense">DELETE EXPENSE</string>
+
+</resources>
