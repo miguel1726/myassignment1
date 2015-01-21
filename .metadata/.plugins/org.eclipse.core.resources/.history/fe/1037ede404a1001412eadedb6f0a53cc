@@ -9,17 +9,17 @@ import junit.framework.TestCase;
 public class claimlisttest extends TestCase {
 	public void testemptyClaimList(){
 			Claim_List claimlist=new Claim_List();
-			
-			assertTrue("Empty claim list", claimlist.size()==0);
+			Collection<Claim> claims=claimlist.getClaims();
+			assertTrue("Empty claim list", claims.size()==0);
 	}
 	public void testAddClaimList(){
 		Claim_List claimlist=new Claim_List();
 		String claimname= "A claim";
 		Claim testClaim = new Claim(claimname);
 		claimlist.addClaim(testClaim);
-		
-		assertTrue("Empty claim list", claimlist.size()==1);
-		assertTrue("", claimlist.contains(testClaim));
+		Collection<Claim> claims=claimlist.getClaims();
+		assertTrue("Empty claim list", claims.size()==1);
+		assertTrue("", claims.contains(testClaim));
 		
 	}
 	public void testdeleteClaimList(){
@@ -27,13 +27,13 @@ public class claimlisttest extends TestCase {
 		String claimname= "A claim";
 		Claim testClaim = new Claim(claimname);
 		claimlist.addClaim(testClaim);
-	
-		assertTrue("Empty claim list", claimlist.size()==1);
-		assertTrue("", claimlist.contains(testClaim));
+		Collection<Claim> claims=claimlist.getClaims();
+		assertTrue("Empty claim list", claims.size()==1);
+		assertTrue("", claims.contains(testClaim));
 		claimlist.deleteClaim(testClaim);
-		
-		assertTrue("Empty list", claimlist.size()==0);
-		assertFalse("", claimlist.contains(testClaim));
+		claims=claimlist.getClaims();
+		assertTrue("Empty list", claims.size()==0);
+		assertFalse("", claims.contains(testClaim));
 		
 		
 	}
@@ -51,14 +51,10 @@ public class claimlisttest extends TestCase {
 		Claim [] claimArray = {testClaim, testClaimB};
 		for (int i= 0; i>claimArray.length;i++){
 				Claim targetClaim =claimArray[i];
-				int maxcount=1000;
 				while (!targetClaim.equals(claimlist.chooseClaims())){
 					//do nothing
-					maxcount --;
 				}
-				assertTrue("toomany",maxcount>0);
 		}
-		
 	}			
 		
 		

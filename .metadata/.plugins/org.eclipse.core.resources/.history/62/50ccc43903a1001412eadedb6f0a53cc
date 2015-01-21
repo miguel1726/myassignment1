@@ -33,12 +33,7 @@ public class Claim_List {
 		return null;
 	}
 
-	public int size(){
-			return claimList.size();
-	}
+
 	
-	public boolean contains(Claim testClaim){
-		return claimList.contains(testClaim);
-	}
 
 }

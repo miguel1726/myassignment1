@@ -30,15 +30,10 @@ public class Claim_List {
 
 	public Claim chooseClaims() {
 		// TODO Auto-generated method stub
-		return null;
+		return claimList.get(0);
 	}
 
-	public int size(){
-			return claimList.size();
-	}
+
 	
-	public boolean contains(Claim testClaim){
-		return claimList.contains(testClaim);
-	}
 
 }

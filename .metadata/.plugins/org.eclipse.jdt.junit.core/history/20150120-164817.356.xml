@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testrun name="Travel_Expense_Manager_test" project="Travel_Expense_Manager_test" tests="4" started="4" failures="0" errors="0" ignored="0">
+  <testsuite name="ultimateavd [emulator-5554]" time="0.273">
+    <testsuite name="ca.ualberta.cs.miguel1_travel.test.claimlisttest" time="0.022">
+      <testcase name="testAddClaimList " classname="ca.ualberta.cs.miguel1_travel.test.claimlisttest" time="0.022"/>
+      <testcase name="testdeleteClaimList " classname="ca.ualberta.cs.miguel1_travel.test.claimlisttest" time="0.0"/>
+      <testcase name="testemptyClaimList " classname="ca.ualberta.cs.miguel1_travel.test.claimlisttest" time="0.0"/>
+    </testsuite>
+    <testsuite name="ca.ualberta.cs.miguel1_travel.test.claimtest" time="0.251">
+      <testcase name="testClaim " classname="ca.ualberta.cs.miguel1_travel.test.claimtest" time="0.251"/>
+    </testsuite>
+  </testsuite>
+</testrun>

@@ -31,7 +31,7 @@ public class claimlisttest extends TestCase {
 		assertTrue("Empty claim list", claimlist.size()==1);
 		assertTrue("", claimlist.contains(testClaim));
 		claimlist.deleteClaim(testClaim);
-		
+		claims=claimlist.getClaims();
 		assertTrue("Empty list", claimlist.size()==0);
 		assertFalse("", claimlist.contains(testClaim));
 		
