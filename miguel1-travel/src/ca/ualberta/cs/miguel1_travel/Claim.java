@@ -13,5 +13,24 @@ public class Claim {
 		// TODO Auto-generated method stub
 		return this.claimname;
 	}
+	public String setDestination(){
+		
+	}
+	public String setDate(){
+		return //date
+				
+	}
+	public String getDate(){
+		
+	}
+	public String getReason(){
+		
+	}
+	public String setReason(){
+		
+	}
+	
+	public ArrayList<tuple>(){
 
+	}
 }

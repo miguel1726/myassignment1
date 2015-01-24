@@ -28,7 +28,7 @@ public class Claim_List {
 		
 	}
 
-	public Claim chooseClaims() {
+	public Claim chooseClaims(Claim choosen) {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -40,5 +40,16 @@ public class Claim_List {
 	public boolean contains(Claim testClaim){
 		return claimList.contains(testClaim);
 	}
-
+	
+	public Claim editClaim(Claim edited){
+	}
+	
+	public Claim mailClaim(Claim mailed){
+		
+	}
+	
+	public Claim submitClaim(Claim submited){
+    }
+	
+	
 }
