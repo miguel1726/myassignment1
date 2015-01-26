@@ -1,47 +1,50 @@
 package ca.ualberta.cs.miguel1_travel;
 
 import java.util.ArrayList;
-import java.util.Collection;
+
+
 	
 
 public class Claim_List {
 	
-	protected ArrayList<Claim> claimList;
+	protected ArrayList<Claim> claimList=null;
 	
 	public Claim_List() {
 		claimList=new ArrayList<Claim>();
 		
 	}
 
-	public Collection<Claim> getClaims() {
+	public ArrayList<Claim> getClaims() {
 		// TODO Auto-generated method stub
 		return claimList;
 	}
 
-	public void addClaim(Claim testClaim) {
+	public void addClaim(Claim claim) {
 		// TODO Auto-generated method stub
-		claimList.add(testClaim);
+		claimList.add(claim);
 	}
 
-	public void deleteClaim(Claim testClaim) {
-		claimList.remove(testClaim);
+	public void deleteClaim(Claim claim) {
+		claimList.remove(claim);
 		
 	}
 
-	public Claim chooseClaims(Claim choosen) {
+	public Claim getClaim(Integer index) {
 		// TODO Auto-generated method stub
-		return null;
+		return claimList.get(index);
 	}
 
 	public int size(){
 			return claimList.size();
 	}
 	
-	public boolean contains(Claim testClaim){
-		return claimList.contains(testClaim);
+	public boolean contains(Claim claim){
+		return claimList.contains(claim);
 	}
 	
-	public Claim editClaim(Claim edited){
+
+	
+	/*public Claim editClaim(Claim edited){
 	}
 	
 	public Claim mailClaim(Claim mailed){
@@ -49,7 +52,7 @@ public class Claim_List {
 	}
 	
 	public Claim submitClaim(Claim submited){
-    }
+    }*/
 	
 	
 }

@@ -1,6 +1,11 @@
 package ca.ualberta.cs.miguel1_travel;
 
+//import java.util.ArrayList;
+
 public class Expense_List {
+	
+	/*protected ArrayList<expense>
+	
 	public Expense addExpense(Expense new){
 		
 	}
@@ -15,5 +20,5 @@ public class Expense_List {
 	}
 	public Expense chooseExpense(Expense choose){
 		
-	}
+	}*/
 }

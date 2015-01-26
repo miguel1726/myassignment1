@@ -28,12 +28,4 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textSize="@dimen/title" />
 
-    <Button
-        android:id="@+id/configure_app"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/List_of_claims"
-        android:layout_alignParentRight="true"
-        android:text="@string/options" />
-
 </RelativeLayout>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="33" version="2.0">
+<workbench progressCount="43" version="2.0">
 <workbenchAdvisor/>
 <window height="768" maximized="true" width="1024" x="0" y="31">
 <fastViewData fastViewLocation="1024"/>
@@ -19,7 +19,7 @@
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="96" y="26"/>
 <coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="140" y="26"/>
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="36" y="26"/>
+<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="62" y="26"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="172" y="26"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
@@ -35,68 +35,62 @@
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
-<part id="3"/>
 <part id="1"/>
-<part id="4"/>
 <part id="2"/>
+<part id="3"/>
+<part id="4"/>
 <part id="5"/>
 <part id="6"/>
 <part id="7"/>
-<part id="8"/>
-<part id="9"/>
-<part id="10"/>
-<part id="11"/>
-<part id="12"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="com.android.ide.eclipse.editors.CommonXmlEditor" name="activity_main.xml" partName="activity_main.xml" path="/cshome/miguel1/myassignment1/miguel1-travel/res/layout/activity_main.xml" title="activity_main.xml" tooltip="miguel1-travel/res/layout/activity_main.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/miguel1-travel/res/layout/activity_main.xml"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MainActivity.java" partName="MainActivity.java" path="/cshome/miguel1/myassignment1/miguel1-travel/src/ca/ualberta/cs/miguel1_travel/MainActivity.java" title="MainActivity.java" tooltip="miguel1-travel/src/ca/ualberta/cs/miguel1_travel/MainActivity.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/miguel1-travel/src/ca/ualberta/cs/miguel1_travel/MainActivity.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="833" selectionTopPixel="0"/>
 </editor>
 <editor id="com.android.ide.eclipse.editors.CommonXmlEditor" name="add_claim.xml" partName="add_claim.xml" path="/cshome/miguel1/myassignment1/miguel1-travel/res/layout/add_claim.xml" title="add_claim.xml" tooltip="miguel1-travel/res/layout/add_claim.xml" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/miguel1-travel/res/layout/add_claim.xml"/>
 </editor>
-<editor id="com.android.ide.eclipse.editors.CommonXmlEditor" name="add_exp.xml" partName="add_exp.xml" path="/cshome/miguel1/myassignment1/miguel1-travel/res/layout/add_exp.xml" title="add_exp.xml" tooltip="miguel1-travel/res/layout/add_exp.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/miguel1-travel/res/layout/add_exp.xml"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Claim.java" partName="Claim.java" path="/cshome/miguel1/myassignment1/miguel1-travel/src/ca/ualberta/cs/miguel1_travel/Claim.java" title="Claim.java" tooltip="miguel1-travel/src/ca/ualberta/cs/miguel1_travel/Claim.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/miguel1-travel/src/ca/ualberta/cs/miguel1_travel/Claim.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="93" selectionTopPixel="0"/>
 </editor>
-<editor id="com.android.ide.eclipse.editors.CommonXmlEditor" name="configure_claim.xml" partName="configure_claim.xml" path="/cshome/miguel1/myassignment1/miguel1-travel/res/layout/configure_claim.xml" title="configure_claim.xml" tooltip="miguel1-travel/res/layout/configure_claim.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/miguel1-travel/res/layout/configure_claim.xml"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Expense.java" partName="Expense.java" path="/cshome/miguel1/myassignment1/miguel1-travel/src/ca/ualberta/cs/miguel1_travel/Expense.java" title="Expense.java" tooltip="miguel1-travel/src/ca/ualberta/cs/miguel1_travel/Expense.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/miguel1-travel/src/ca/ualberta/cs/miguel1_travel/Expense.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
-<editor id="com.android.ide.eclipse.editors.CommonXmlEditor" name="edit_claim.xml" partName="edit_claim.xml" path="/cshome/miguel1/myassignment1/miguel1-travel/res/layout/edit_claim.xml" title="edit_claim.xml" tooltip="miguel1-travel/res/layout/edit_claim.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/miguel1-travel/res/layout/edit_claim.xml"/>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Claim_List.java" partName="Claim_List.java" path="/cshome/miguel1/myassignment1/miguel1-travel/src/ca/ualberta/cs/miguel1_travel/Claim_List.java" title="Claim_List.java" tooltip="miguel1-travel/src/ca/ualberta/cs/miguel1_travel/Claim_List.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/miguel1-travel/src/ca/ualberta/cs/miguel1_travel/Claim_List.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="610" selectionTopPixel="0"/>
 </editor>
-<editor id="com.android.ide.eclipse.editors.CommonXmlEditor" name="spinner_category.xml" partName="spinner_category.xml" path="/cshome/miguel1/myassignment1/miguel1-travel/res/values/spinner_category.xml" title="spinner_category.xml" tooltip="miguel1-travel/res/values/spinner_category.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/miguel1-travel/res/values/spinner_category.xml"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Expense_List.java" partName="Expense_List.java" path="/cshome/miguel1/myassignment1/miguel1-travel/src/ca/ualberta/cs/miguel1_travel/Expense_List.java" title="Expense_List.java" tooltip="miguel1-travel/src/ca/ualberta/cs/miguel1_travel/Expense_List.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/miguel1-travel/src/ca/ualberta/cs/miguel1_travel/Expense_List.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MainActivity.java" partName="MainActivity.java" path="/cshome/miguel1/myassignment1/miguel1-travel/src/ca/ualberta/cs/miguel1_travel/MainActivity.java" title="MainActivity.java" tooltip="miguel1-travel/src/ca/ualberta/cs/miguel1_travel/MainActivity.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/miguel1-travel/src/ca/ualberta/cs/miguel1_travel/MainActivity.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1089" selectionTopPixel="0"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="claimtest.java" partName="claimtest.java" path="/cshome/miguel1/myassignment1/Travel_Expense_Manager_test/src/ca/ualberta/cs/miguel1_travel/test/claimtest.java" title="claimtest.java" tooltip="Travel_Expense_Manager_test/src/ca/ualberta/cs/miguel1_travel/test/claimtest.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Travel_Expense_Manager_test/src/ca/ualberta/cs/miguel1_travel/test/claimtest.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="345" selectionTopPixel="0"/>
 </editor>
-<editor id="com.android.ide.eclipse.editors.CommonXmlEditor" name="spinner_currency.xml" partName="spinner_currency.xml" path="/cshome/miguel1/myassignment1/miguel1-travel/res/values/spinner_currency.xml" title="spinner_currency.xml" tooltip="miguel1-travel/res/values/spinner_currency.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/miguel1-travel/res/values/spinner_currency.xml"/>
-</editor>
-<editor id="com.android.ide.eclipse.editors.CommonXmlEditor" name="edit_expense.xml" partName="edit_expense.xml" path="/cshome/miguel1/myassignment1/miguel1-travel/res/layout/edit_expense.xml" title="edit_expense.xml" tooltip="miguel1-travel/res/layout/edit_expense.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/miguel1-travel/res/layout/edit_expense.xml"/>
-</editor>
-<editor id="com.android.ide.eclipse.editors.CommonXmlEditor" name="mail_claim.xml" partName="mail_claim.xml" path="/cshome/miguel1/myassignment1/miguel1-travel/res/layout/mail_claim.xml" title="mail_claim.xml" tooltip="miguel1-travel/res/layout/mail_claim.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/miguel1-travel/res/layout/mail_claim.xml"/>
-</editor>
-<editor id="com.android.ide.eclipse.editors.CommonXmlEditor" name="submit_claim.xml" partName="submit_claim.xml" path="/cshome/miguel1/myassignment1/miguel1-travel/res/layout/submit_claim.xml" title="submit_claim.xml" tooltip="miguel1-travel/res/layout/submit_claim.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/miguel1-travel/res/layout/submit_claim.xml"/>
-</editor>
-<editor id="com.android.ide.eclipse.editors.CommonXmlEditor" name="delete_claim.xml" partName="delete_claim.xml" path="/cshome/miguel1/myassignment1/miguel1-travel/res/layout/delete_claim.xml" title="delete_claim.xml" tooltip="miguel1-travel/res/layout/delete_claim.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/miguel1-travel/res/layout/delete_claim.xml"/>
-</editor>
-<editor activePart="true" focus="true" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="view_exp.xml" partName="view_exp.xml" path="/cshome/miguel1/myassignment1/miguel1-travel/res/layout/view_exp.xml" title="view_exp.xml" tooltip="miguel1-travel/res/layout/view_exp.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/miguel1-travel/res/layout/view_exp.xml"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="claimlisttest.java" partName="claimlisttest.java" path="/cshome/miguel1/myassignment1/Travel_Expense_Manager_test/src/ca/ualberta/cs/miguel1_travel/test/claimlisttest.java" title="claimlisttest.java" tooltip="Travel_Expense_Manager_test/src/ca/ualberta/cs/miguel1_travel/test/claimlisttest.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Travel_Expense_Manager_test/src/ca/ualberta/cs/miguel1_travel/test/claimlisttest.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="45" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
+<view id="org.eclipse.jdt.junit.ResultView" partName="JUnit">
+<viewState failuresOnly="false" layout="1" orientation="2" ratio="500" scroll="false" time="true"/>
+</view>
+<view id="com.android.ide.eclipse.ddms.views.LogCatView" partName="LogCat">
+<viewState/>
+</view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Warnings (1 item)"/>
+<category IMemento.internal.id="Warnings (28 items)"/>
+<category IMemento.internal.id="Warnings"/>
+<category IMemento.internal.id="Errors"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="381" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -137,14 +131,9 @@
 </customFilters>
 </viewState>
 </view>
-<view id="org.eclipse.pde.runtime.LogView" partName="Error Log">
-<viewState activate="true" allSessions="true" column2="300" column3="150" column4="531" error="true" groupBy="0" info="true" limit="50" ok="true" orderType="2" orderValue="-1" show_filter_text="true" useLimit="true" warning="true"/>
-</view>
 <view id="org.eclipse.mylyn.tasks.ui.views.tasks" partName="Task List">
 <viewState linkWithEditor="true" presentation="org.eclipse.mylyn.tasks.ui.categorized">
-<sorter groupBy="CATEGORY_QUERY">
-<sorter>
-<sort0 sortDirection="1" sortKey="PRIORITY"/>
+<sorter groupBy="CATEGORY_QUERY">&#x0A;<sorter>&#x0A;<sort0 sortDirection="1" sortKey="PRIORITY"/>
 <sort1 sortDirection="1" sortKey="RANK"/>
 <sort2 sortDirection="1" sortKey="DATE_CREATED"/>
 <sort3 sortDirection="1" sortKey="NONE"/>
@@ -157,13 +146,16 @@
 <filteredTreeFindHistory/>
 </viewState>
 </view>
+<view id="org.eclipse.pde.runtime.LogView" partName="Error Log">
+<viewState activate="true" allSessions="true" column2="300" column3="150" column4="531" error="true" groupBy="0" info="true" limit="50" ok="true" orderType="2" orderValue="-1" show_filter_text="true" useLimit="true" warning="true"/>
+</view>
 <view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
 <viewState/>
 </view>
 <view id="org.eclipse.jdt.ui.SourceView" partName="Declaration"/>
 <view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc"/>
 </views>
-<perspectives activePart="org.eclipse.jdt.ui.PackageExplorer" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
+<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.jdt.internal.ui.JavaPerspectiveFactory" id="org.eclipse.jdt.ui.JavaPerspective" label="Java"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -235,10 +227,12 @@
 <hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
 <view id="org.eclipse.jdt.ui.PackageExplorer"/>
+<view id="org.eclipse.jdt.junit.ResultView"/>
 <view id="org.eclipse.ui.views.ProblemView"/>
 <view id="org.eclipse.jdt.ui.JavadocView"/>
 <view id="org.eclipse.jdt.ui.SourceView"/>
 <view id="org.eclipse.pde.runtime.LogView"/>
+<view id="com.android.ide.eclipse.ddms.views.LogCatView"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <fastViewBars>
 <fastViewBar fastViewLocation="131072" id="org.eclipse.ui.internal.ViewStack@47fea903" orientation="512" selectedTabId="org.eclipse.mylyn.tasks.ui.views.tasks" style="0">
@@ -250,16 +244,17 @@
 <layout>
 <mainWindow>
 <info folder="true" part="left">
-<folder activePageID="org.eclipse.jdt.ui.PackageExplorer" appearance="2" expanded="2">
+<folder activePageID="org.eclipse.jdt.junit.ResultView" appearance="2" expanded="2">
 <page content="org.eclipse.jdt.ui.PackageExplorer" label="Package Explorer"/>
+<page content="org.eclipse.jdt.junit.ResultView" label="JUnit"/>
 <page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
 <page content="org.eclipse.ui.navigator.ProjectExplorer" label="LabelNotFound"/>
-<page content="org.eclipse.jdt.junit.ResultView" label="LabelNotFound"/>
 <page content="org.eclipse.wb.core.StructureView" label="LabelNotFound"/>
 <page content="org.eclipse.wb.core.PaletteView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
+<part id="1"/>
 </presentation>
 </folder>
 </info>
@@ -278,6 +273,7 @@
 <page content="org.eclipse.jdt.ui.JavadocView" label="Javadoc"/>
 <page content="org.eclipse.jdt.ui.SourceView" label="Declaration"/>
 <page content="org.eclipse.pde.runtime.LogView" label="Error Log"/>
+<page content="com.android.ide.eclipse.ddms.views.LogCatView" label="LogCat"/>
 <page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
@@ -287,11 +283,12 @@
 <part id="1"/>
 <part id="2"/>
 <part id="3"/>
+<part id="4"/>
 </presentation>
 </folder>
 </info>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@47fea903" ratio="0.6565041" ratioLeft="646" ratioRight="338" relationship="2" relative="org.eclipse.ui.editorss">
-<folder appearance="2" expanded="0">
+<folder appearance="2" expanded="2">
 <page content="org.eclipse.mylyn.tasks.ui.views.tasks" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
@@ -314,90 +311,161 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/miguel1-travel/res/layout/add_claim.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/miguel1-travel/res/layout/add_exp.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/miguel1-travel/res/layout/configure_claim.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/miguel1-travel/res/layout/edit_claim.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/miguel1-travel/res/values/spinner_category.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/miguel1-travel/src/ca/ualberta/cs/miguel1_travel/MainActivity.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/miguel1-travel/gen/ca/ualberta/cs/miguel1_travel/R.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/miguel1-travel/res/values/spinner_currency.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/miguel1-travel/res/layout/edit_expense.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/miguel1-travel/res/layout/mail_claim.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/miguel1-travel/res/layout/submit_claim.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/miguel1-travel/res/layout/delete_claim.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/miguel1-travel/res/layout/view_exp.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/miguel1-travel/src/ca/ualberta/cs/miguel1_travel/Claim.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/miguel1-travel/src/ca/ualberta/cs/miguel1_travel/Claim_List.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Travel_Expense_Manager_test/src/ca/ualberta/cs/miguel1_travel/test/claimtest.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Travel_Expense_Manager_test/src/ca/ualberta/cs/miguel1_travel/test/claimlisttest.java"/>
 </editors>
-<item historyLabel="add_exp.xml" index="1"/>
-<item historyLabel="add_claim.xml" index="0"/>
-<item historyLabel="edit_claim.xml" index="3"/>
-<item historyLabel="add_exp.xml" index="1"/>
-<item historyLabel="spinner_category.xml" index="4"/>
-<item historyLabel="MainActivity.java" index="5">
-<position info="not_deleted" x="372" y="0"/>
+<item historyLabel="Claim_List.java" index="1">
+<position info="not_deleted" x="757" y="0"/>
 </item>
-<item historyLabel="R.java" index="6">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="claimlisttest.java" index="3">
+<position info="not_deleted" x="526" y="0"/>
 </item>
-<item historyLabel="MainActivity.java" index="5">
-<position info="not_deleted" x="372" y="0"/>
+<item historyLabel="Claim_List.java" index="1">
+<position info="not_deleted" x="274" y="0"/>
 </item>
-<item historyLabel="MainActivity.java" index="5">
-<position info="not_deleted" x="65" y="0"/>
+<item historyLabel="claimlisttest.java" index="3">
+<position info="not_deleted" x="1851" y="0"/>
 </item>
-<item historyLabel="MainActivity.java" index="5">
-<position info="not_deleted" x="164" y="22"/>
+<item historyLabel="claimtest.java" index="2">
+<position info="not_deleted" x="336" y="0"/>
 </item>
-<item historyLabel="MainActivity.java" index="5">
-<position info="not_deleted" x="565" y="0"/>
+<item historyLabel="Claim_List.java" index="1">
+<position info="not_deleted" x="274" y="0"/>
 </item>
-<item historyLabel="MainActivity.java" index="5">
-<position info="not_deleted" x="836" y="0"/>
+<item historyLabel="claimtest.java" index="2">
+<position info="not_deleted" x="336" y="0"/>
 </item>
-<item historyLabel="MainActivity.java" index="5">
-<position info="not_deleted" x="635" y="12"/>
+<item historyLabel="claimlisttest.java" index="3">
+<position info="not_deleted" x="1851" y="0"/>
 </item>
-<item historyLabel="MainActivity.java" index="5">
-<position info="not_deleted" x="836" y="0"/>
+<item historyLabel="Claim_List.java" index="1">
+<position info="not_deleted" x="274" y="0"/>
 </item>
-<item historyLabel="MainActivity.java" index="5">
-<position info="not_deleted" x="1089" y="0"/>
+<item historyLabel="claimlisttest.java" index="3">
+<position info="not_deleted" x="1851" y="0"/>
 </item>
-<item historyLabel="spinner_category.xml" index="4"/>
-<item historyLabel="add_exp.xml" index="1"/>
-<item historyLabel="spinner_category.xml" index="4"/>
-<item historyLabel="add_exp.xml" index="1"/>
-<item historyLabel="spinner_category.xml" index="4"/>
-<item historyLabel="add_exp.xml" index="1"/>
-<item historyLabel="spinner_category.xml" index="4"/>
-<item historyLabel="add_exp.xml" index="1"/>
-<item historyLabel="spinner_currency.xml" index="7"/>
-<item historyLabel="spinner_category.xml" index="4"/>
-<item historyLabel="spinner_currency.xml" index="7"/>
-<item historyLabel="spinner_category.xml" index="4"/>
-<item historyLabel="spinner_currency.xml" index="7"/>
-<item historyLabel="spinner_category.xml" index="4"/>
-<item historyLabel="spinner_currency.xml" index="7"/>
-<item historyLabel="spinner_category.xml" index="4"/>
-<item historyLabel="spinner_currency.xml" index="7"/>
-<item historyLabel="spinner_category.xml" index="4"/>
-<item historyLabel="spinner_currency.xml" index="7"/>
-<item historyLabel="add_exp.xml" index="1"/>
-<item historyLabel="spinner_category.xml" index="4"/>
-<item historyLabel="add_claim.xml" index="0"/>
-<item historyLabel="edit_claim.xml" index="3"/>
-<item historyLabel="edit_expense.xml" index="8"/>
-<item historyLabel="mail_claim.xml" index="9"/>
-<item historyLabel="edit_claim.xml" index="3"/>
-<item historyLabel="configure_claim.xml" index="2"/>
-<item historyLabel="submit_claim.xml" index="10"/>
-<item historyLabel="delete_claim.xml" index="11"/>
-<item historyLabel="submit_claim.xml" index="10"/>
-<item historyLabel="configure_claim.xml" index="2"/>
-<item historyLabel="view_exp.xml" index="12"/>
-<item historyLabel="configure_claim.xml" index="2"/>
-<item historyLabel="submit_claim.xml" index="10"/>
-<item active="true" historyLabel="view_exp.xml" index="12"/>
+<item historyLabel="Claim.java" index="0">
+<position info="not_deleted" x="93" y="0"/>
+</item>
+<item historyLabel="claimlisttest.java" index="3">
+<position info="not_deleted" x="1851" y="0"/>
+</item>
+<item historyLabel="claimlisttest.java" index="3">
+<position info="not_deleted" x="1082" y="0"/>
+</item>
+<item historyLabel="Claim_List.java" index="1">
+<position info="not_deleted" x="757" y="0"/>
+</item>
+<item historyLabel="claimlisttest.java" index="3">
+<position info="not_deleted" x="1082" y="0"/>
+</item>
+<item historyLabel="claimlisttest.java" index="3">
+<position info="not_deleted" x="1045" y="0"/>
+</item>
+<item historyLabel="claimlisttest.java" index="3">
+<position info="not_deleted" x="962" y="0"/>
+</item>
+<item historyLabel="Claim_List.java" index="1">
+<position/>
+</item>
+<item historyLabel="claimlisttest.java" index="3">
+<position info="not_deleted" x="980" y="0"/>
+</item>
+<item historyLabel="Claim_List.java" index="1">
+<position info="not_deleted" x="539" y="0"/>
+</item>
+<item historyLabel="claimlisttest.java" index="3">
+<position info="not_deleted" x="980" y="0"/>
+</item>
+<item historyLabel="Claim.java" index="0">
+<position info="not_deleted" x="93" y="0"/>
+</item>
+<item historyLabel="Claim_List.java" index="1">
+<position info="not_deleted" x="757" y="0"/>
+</item>
+<item historyLabel="claimlisttest.java" index="3">
+<position info="not_deleted" x="1843" y="0"/>
+</item>
+<item historyLabel="Claim_List.java" index="1">
+<position info="not_deleted" x="529" y="6"/>
+</item>
+<item historyLabel="claimlisttest.java" index="3">
+<position info="not_deleted" x="1843" y="0"/>
+</item>
+<item historyLabel="Claim_List.java" index="1">
+<position info="not_deleted" x="529" y="6"/>
+</item>
+<item historyLabel="claimlisttest.java" index="3">
+<position info="not_deleted" x="1843" y="0"/>
+</item>
+<item historyLabel="Claim_List.java" index="1">
+<position info="not_deleted" x="529" y="6"/>
+</item>
+<item historyLabel="Claim_List.java" index="1">
+<position info="not_deleted" x="610" y="0"/>
+</item>
+<item historyLabel="claimtest.java" index="2">
+<position info="not_deleted" x="345" y="0"/>
+</item>
+<item historyLabel="claimlisttest.java" index="3">
+<position info="not_deleted" x="1843" y="0"/>
+</item>
+<item historyLabel="claimlisttest.java" index="3">
+<position info="not_deleted" x="1499" y="0"/>
+</item>
+<item historyLabel="claimlisttest.java" index="3">
+<position info="not_deleted" x="1533" y="0"/>
+</item>
+<item historyLabel="claimlisttest.java" index="3">
+<position info="not_deleted" x="1545" y="0"/>
+</item>
+<item historyLabel="claimlisttest.java" index="3">
+<position info="not_deleted" x="1843" y="0"/>
+</item>
+<item historyLabel="claimlisttest.java" index="3">
+<position info="not_deleted" x="1663" y="0"/>
+</item>
+<item historyLabel="claimlisttest.java" index="3">
+<position info="not_deleted" x="1743" y="0"/>
+</item>
+<item historyLabel="claimlisttest.java" index="3">
+<position info="not_deleted" x="1840" y="0"/>
+</item>
+<item historyLabel="claimlisttest.java" index="3">
+<position info="not_deleted" x="1825" y="0"/>
+</item>
+<item historyLabel="claimlisttest.java" index="3">
+<position info="not_deleted" x="1827" y="0"/>
+</item>
+<item historyLabel="Claim.java" index="0">
+<position info="not_deleted" x="93" y="0"/>
+</item>
+<item historyLabel="Claim_List.java" index="1">
+<position info="not_deleted" x="610" y="0"/>
+</item>
+<item historyLabel="Claim_List.java" index="1">
+<position info="not_deleted" x="632" y="0"/>
+</item>
+<item historyLabel="Claim_List.java" index="1">
+<position info="not_deleted" x="753" y="0"/>
+</item>
+<item historyLabel="Claim_List.java" index="1">
+<position info="not_deleted" x="748" y="0"/>
+</item>
+<item historyLabel="claimlisttest.java" index="3">
+<position info="not_deleted" x="729" y="0"/>
+</item>
+<item historyLabel="Claim_List.java" index="1">
+<position info="not_deleted" x="748" y="0"/>
+</item>
+<item historyLabel="claimlisttest.java" index="3">
+<position info="not_deleted" x="45" y="0"/>
+</item>
+<item active="true" historyLabel="Claim_List.java" index="1">
+<position info="not_deleted" x="748" y="0"/>
+</item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
@@ -419,6 +487,33 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="claimlisttest.java" tooltip="Travel_Expense_Manager_test/src/ca/ualberta/cs/miguel1_travel/test/claimlisttest.java">
+<persistable path="/Travel_Expense_Manager_test/src/ca/ualberta/cs/miguel1_travel/test/claimlisttest.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="claimtest.java" tooltip="Travel_Expense_Manager_test/src/ca/ualberta/cs/miguel1_travel/test/claimtest.java">
+<persistable path="/Travel_Expense_Manager_test/src/ca/ualberta/cs/miguel1_travel/test/claimtest.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Expense_List.java" tooltip="miguel1-travel/src/ca/ualberta/cs/miguel1_travel/Expense_List.java">
+<persistable path="/miguel1-travel/src/ca/ualberta/cs/miguel1_travel/Expense_List.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Claim_List.java" tooltip="miguel1-travel/src/ca/ualberta/cs/miguel1_travel/Claim_List.java">
+<persistable path="/miguel1-travel/src/ca/ualberta/cs/miguel1_travel/Claim_List.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Expense.java" tooltip="miguel1-travel/src/ca/ualberta/cs/miguel1_travel/Expense.java">
+<persistable path="/miguel1-travel/src/ca/ualberta/cs/miguel1_travel/Expense.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Claim.java" tooltip="miguel1-travel/src/ca/ualberta/cs/miguel1_travel/Claim.java">
+<persistable path="/miguel1-travel/src/ca/ualberta/cs/miguel1_travel/Claim.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="add_claim.xml" tooltip="miguel1-travel/res/layout/add_claim.xml">
+<persistable path="/miguel1-travel/res/layout/add_claim.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MainActivity.java" tooltip="miguel1-travel/src/ca/ualberta/cs/miguel1_travel/MainActivity.java">
+<persistable path="/miguel1-travel/src/ca/ualberta/cs/miguel1_travel/MainActivity.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="delete_exp.xml" tooltip="miguel1-travel/res/layout/delete_exp.xml">
+<persistable path="/miguel1-travel/res/layout/delete_exp.xml"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="view_exp.xml" tooltip="miguel1-travel/res/layout/view_exp.xml">
 <persistable path="/miguel1-travel/res/layout/view_exp.xml"/>
 </file>
@@ -436,30 +531,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="spinner_currency.xml" tooltip="miguel1-travel/res/values/spinner_currency.xml">
 <persistable path="/miguel1-travel/res/values/spinner_currency.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="R.java" tooltip="miguel1-travel/gen/ca/ualberta/cs/miguel1_travel/R.java">
-<persistable path="/miguel1-travel/gen/ca/ualberta/cs/miguel1_travel/R.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MainActivity.java" tooltip="miguel1-travel/src/ca/ualberta/cs/miguel1_travel/MainActivity.java">
-<persistable path="/miguel1-travel/src/ca/ualberta/cs/miguel1_travel/MainActivity.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="spinner_category.xml" tooltip="miguel1-travel/res/values/spinner_category.xml">
-<persistable path="/miguel1-travel/res/values/spinner_category.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="edit_claim.xml" tooltip="miguel1-travel/res/layout/edit_claim.xml">
-<persistable path="/miguel1-travel/res/layout/edit_claim.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="configure_claim.xml" tooltip="miguel1-travel/res/layout/configure_claim.xml">
-<persistable path="/miguel1-travel/res/layout/configure_claim.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="add_exp.xml" tooltip="miguel1-travel/res/layout/add_exp.xml">
-<persistable path="/miguel1-travel/res/layout/add_exp.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="add_claim.xml" tooltip="miguel1-travel/res/layout/add_claim.xml">
-<persistable path="/miguel1-travel/res/layout/add_claim.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="activity_main.xml" tooltip="miguel1-travel/res/layout/activity_main.xml">
-<persistable path="/miguel1-travel/res/layout/activity_main.xml"/>
 </file>
 </mruList>
 </workbench>

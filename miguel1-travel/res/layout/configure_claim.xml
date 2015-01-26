@@ -14,16 +14,6 @@
         android:text="@string/delete" />
 
     <Button
-        android:id="@+id/add_claim"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="67dp"
-        android:text="@string/add" />
-
-    <Button
         android:id="@+id/edit_claim"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -53,16 +43,6 @@
         android:layout_marginTop="14dp"
         android:text="@string/submit" />
 
-    <TextView
-        android:id="@+id/configure_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="31dp"
-        android:text="@string/claim_options"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
-
     <Button
         android:id="@+id/view_expense"
         android:layout_width="wrap_content"
@@ -72,5 +52,33 @@
         android:layout_below="@+id/delete_claim"
         android:layout_marginTop="16dp"
         android:text="@string/view_expenses" />
+
+    <TextView
+        android:id="@+id/configure_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/claim_options"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/view_claims"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/configure_title"
+        android:text="@string/view_claims" />
+
+    <Button
+        android:id="@+id/add_claim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/view_claims"
+        android:layout_marginTop="14dp"
+        android:text="@string/add" />
 
 </RelativeLayout>

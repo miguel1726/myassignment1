@@ -4,4 +4,8 @@
 <fullyQualifiedTypeName name="android.widget.ArrayAdapter"/>
 <fullyQualifiedTypeName name="ca.ualberta.cs.miguel1_travel.R.array"/>
 <fullyQualifiedTypeName name="android.R.layout"/>
+<fullyQualifiedTypeName name="ca.ualberta.cs.miguel1_travel.Claim_List"/>
+<fullyQualifiedTypeName name="java.util.Collection"/>
+<fullyQualifiedTypeName name="ca.ualberta.cs.miguel1_travel.Claim"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>

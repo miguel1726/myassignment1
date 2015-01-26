@@ -50,5 +50,6 @@
     <string name="select_expense">Select Expense</string>
     <string name="delete_expense">DELETE EXPENSE</string>
     <string name="edit_expense">EDIT EXPENSE</string>
+    <string name="view_claims">View Claims</string>
 
 </resources>

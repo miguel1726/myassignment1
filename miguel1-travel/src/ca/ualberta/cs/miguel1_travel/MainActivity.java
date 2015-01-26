@@ -19,8 +19,8 @@ package ca.ualberta.cs.miguel1_travel;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
-import android.widget.ArrayAdapter;
-import android.widget.Spinner;
+//import android.widget.ArrayAdapter;
+//import android.widget.Spinner;
 public class MainActivity extends Activity {
 
 	//spinner code taken from youtube video: Android spinner example, by raghav shetty, link watch?v=o7Om-iUoiio on jan 16 2015
@@ -28,7 +28,7 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.configure_claim);
         
       //  cat=(Spinner) findViewById(R.id.select_edit_claim);
       //  ArrayAdapter<CharSequence> ar= ArrayAdapter.createFromResource(this,R.array.Category, android.R.layout.simple_list_item_1);

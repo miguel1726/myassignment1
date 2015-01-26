@@ -1,6 +1,6 @@
 package ca.ualberta.cs.miguel1_travel.test;
 
-
+import java.util.Collection;
 
 import ca.ualberta.cs.miguel1_travel.Claim;
 import ca.ualberta.cs.miguel1_travel.Claim_List;
