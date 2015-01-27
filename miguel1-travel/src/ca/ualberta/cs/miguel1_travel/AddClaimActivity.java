@@ -23,9 +23,9 @@ public class AddClaimActivity extends Activity {
 	}
 	public void addnewClaim(View v){
 		Toast.makeText(this, "add claim", Toast.LENGTH_SHORT).show();
-		//ClaimListController cl= new ClaimListController();
-		// EditText textView = (EditText) findViewById(R.id.add_new_claim);
-		//cl.addClaim(new Claim(textView.getText().toString()));
+		ClaimListController cl= new ClaimListController();
+		EditText textView = (EditText) findViewById(R.id.insert_claim_name);
+		cl.addClaim(new Claim(textView.getText().toString()));
 	}
 
 }
