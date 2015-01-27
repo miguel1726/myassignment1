@@ -22,6 +22,42 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="ca.ualberta.cs.miguel1_travel.ListExpActivity"
+            android:label="@string/title_activity_list_exp" >
+        </activity>
+        <activity
+            android:name="ca.ualberta.cs.miguel1_travel.EditClaimactivity"
+            android:label="@string/title_activity_edit_claimactivity" >
+        </activity>
+        <activity
+            android:name="ca.ualberta.cs.miguel1_travel.AddClaimActivity"
+            android:label="@string/title_activity_add_claim" >
+        </activity>
+        <activity
+            android:name="ca.ualberta.cs.miguel1_travel.DeleteClaimActivity"
+            android:label="@string/title_activity_delete_claim" >
+        </activity>
+        <activity
+            android:name="ca.ualberta.cs.miguel1_travel.MailClaimActivity"
+            android:label="@string/title_activity_mail_claim" >
+        </activity>
+        <activity
+            android:name="ca.ualberta.cs.miguel1_travel.StatusClaimActivity"
+            android:label="@string/title_activity_status_claim" >
+        </activity>
+        <activity
+            android:name="ca.ualberta.cs.miguel1_travel.AddExpActivity"
+            android:label="@string/title_activity_add_exp" >
+        </activity>
+        <activity
+            android:name="ca.ualberta.cs.miguel1_travel.EditExpActivity"
+            android:label="@string/title_activity_edit_exp" >
+        </activity>
+        <activity
+            android:name="ca.ualberta.cs.miguel1_travel.DeleteExpActivity"
+            android:label="@string/title_activity_delete_exp" >
+        </activity>
     </application>
 
 </manifest>

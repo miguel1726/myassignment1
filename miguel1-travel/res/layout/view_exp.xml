@@ -30,16 +30,6 @@
         android:layout_alignRight="@+id/view_exp_title"
         android:layout_below="@+id/select_claim_view" />
 
-    <Button
-        android:id="@+id/exp_options"
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_alignTop="@+id/select_claim_view"
-        android:layout_marginRight="26dp"
-        android:text="@string/options" />
-
     <TextView
         android:id="@+id/Expenses_view"
         android:layout_width="wrap_content"
@@ -75,8 +65,6 @@
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/exp_total"
         android:layout_alignBottom="@+id/exp_total"
-        android:layout_alignLeft="@+id/exp_options"
-        android:layout_alignRight="@+id/exp_options"
         android:ems="10"
         android:inputType="number" >
 
