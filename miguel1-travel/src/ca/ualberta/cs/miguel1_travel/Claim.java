@@ -8,21 +8,19 @@ public class Claim /*implements Serializable*/ {
 	/*http://www.mkyong.com/java/how-to-generate-serialversionuid/ 1-26-2015 */
 	//private static final long serialVersionUID = -1L;
 		
-		protected Integer claimnumber=0;
+		protected String claimname;
 		protected String destination="";
 		protected String reason="";
 		protected Calendar from=Calendar.getInstance();
 		protected Calendar to=Calendar.getInstance();
 		private ArrayList<Expense> expenses= new ArrayList<Expense>();
 		
+		public Claim(String claimname ){
+			this.claimname=claimname;
+			
+		}
+		
 	
-		public void setidClaim(Integer claimnumber) {
-		// TODO Auto-generated constructor stub
-			this.claimnumber=claimnumber+1;
-		}
-		public Integer getidClaim(){
-			return this.claimnumber;
-		}
 	
 		public String getDestination() {
 			// TODO Auto-generated method stub

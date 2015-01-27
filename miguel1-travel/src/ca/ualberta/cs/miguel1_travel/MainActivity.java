@@ -21,7 +21,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Toast;
+//import android.widget.Toast;
 
 //import android.widget.ArrayAdapter;
 //import android.widget.Spinner;
@@ -50,32 +50,32 @@ public class MainActivity extends Activity {
     }
     
     public void editClaim(MenuItem menu){
-    	Toast.makeText(this, "Edit claim", Toast.LENGTH_SHORT).show();
+    	//Toast.makeText(this, "Edit claim", Toast.LENGTH_SHORT).show();
     	Intent intent = new Intent(MainActivity.this, EditClaimactivity.class);
     	startActivity(intent);
     }
     public void addClaim(MenuItem menu){
-    	Toast.makeText(this, "add claim", Toast.LENGTH_SHORT).show();
+    	//Toast.makeText(this, "add claim", Toast.LENGTH_SHORT).show();
     	Intent intent = new Intent(MainActivity.this, AddClaimActivity.class);
     	startActivity(intent);
     }
     public void deleteClaim(MenuItem menu){
-    	Toast.makeText(this, "delete claim", Toast.LENGTH_SHORT).show();
+    	//Toast.makeText(this, "delete claim", Toast.LENGTH_SHORT).show();
     	Intent intent = new Intent(MainActivity.this, DeleteClaimActivity.class);
     	startActivity(intent);
     }
     public void mailClaim(MenuItem menu){
-    	Toast.makeText(this, "mail claim", Toast.LENGTH_SHORT).show();
+    	//Toast.makeText(this, "mail claim", Toast.LENGTH_SHORT).show();
     	Intent intent = new Intent(MainActivity.this, MailClaimActivity.class);
     	startActivity(intent);
     }
     public void statusClaim(MenuItem menu){
-    	Toast.makeText(this, "status of claim", Toast.LENGTH_SHORT).show();
+    	//Toast.makeText(this, "status of claim", Toast.LENGTH_SHORT).show();
     	Intent intent = new Intent(MainActivity.this, StatusClaimActivity.class);
     	startActivity(intent);
     }
     public void viewExpenseofClaim(MenuItem menu){
-    	Toast.makeText(this, "expenses in claim", Toast.LENGTH_SHORT).show();
+    	//Toast.makeText(this, "expenses in claim", Toast.LENGTH_SHORT).show();
     	Intent intent = new Intent(MainActivity.this, ListExpActivity.class);
     	startActivity(intent);
     }

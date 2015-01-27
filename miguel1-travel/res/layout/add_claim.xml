@@ -101,6 +101,25 @@
         android:layout_alignLeft="@+id/reason_claim"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="37dp"
+        android:onClick="addnewClaim"
         android:text="@string/add_new_claim" />
+
+    <TextView
+        android:id="@+id/claim_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/reason_claim"
+        android:layout_below="@+id/reason_claim"
+        android:text="@string/claim_name"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/insert_claim_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/claim_name"
+        android:layout_below="@+id/claim_name"
+        android:ems="10"
+        android:inputType="text" />
 
 </RelativeLayout>
