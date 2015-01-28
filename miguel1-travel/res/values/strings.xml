@@ -65,5 +65,6 @@
     <string name="title_activity_edit_exp">EditExpActivity</string>
     <string name="title_activity_delete_exp">DeleteExpActivity</string>
     <string name="claim_name">Claim Name</string>
+    <string name="name_">"Name "</string>
 
 </resources>

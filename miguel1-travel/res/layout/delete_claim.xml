@@ -39,6 +39,7 @@
         android:layout_alignRight="@+id/delete_claim_title"
         android:layout_below="@+id/select_claim_to_delete"
         android:layout_marginTop="113dp"
+        android:onClick="deleteClaim"
         android:text="@string/delete" />
 
 </RelativeLayout>

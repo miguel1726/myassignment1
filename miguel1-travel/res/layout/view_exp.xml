@@ -40,7 +40,7 @@
         android:textAppearance="?android:attr/textAppearanceSmall" />
 
     <ListView
-        android:id="@+id/listView1"
+        android:id="@+id/expense_listview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -54,7 +54,7 @@
         android:id="@+id/exp_total"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/listView1"
+        android:layout_above="@+id/expense_listview"
         android:layout_alignRight="@+id/select_claim_list"
         android:text="@string/total"
         android:textAppearance="?android:attr/textAppearanceSmall" />

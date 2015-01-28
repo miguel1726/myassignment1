@@ -111,9 +111,28 @@
         android:id="@+id/add_new_exp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/currency_exp_type"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="21dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="16dp"
+        android:onClick="addnewExp"
         android:text="@string/add" />
+
+    <TextView
+        android:id="@+id/name_exp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/currency_exp_type"
+        android:text="@string/name_"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/name_of_exp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/currency_exp_type"
+        android:layout_below="@+id/name_exp"
+        android:ems="10"
+        android:inputType="text" />
 
 </RelativeLayout>

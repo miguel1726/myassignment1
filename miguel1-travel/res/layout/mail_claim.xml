@@ -61,6 +61,7 @@
         android:layout_below="@+id/email_to_ins"
         android:layout_marginTop="69dp"
         android:layout_toRightOf="@+id/select_claim_mail"
+        android:onClick="mailClaim"
         android:text="@string/send" />
 
 </RelativeLayout>

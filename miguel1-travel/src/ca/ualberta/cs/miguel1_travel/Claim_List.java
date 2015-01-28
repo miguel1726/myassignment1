@@ -44,15 +44,7 @@ public class Claim_List {
 	
 
 	
-	/*public Claim editClaim(Claim edited){
-	}
 	
-	public Claim mailClaim(Claim mailed){
-		
-	}
-	
-	public Claim submitClaim(Claim submited){
-    }*/
 	
 	
 }

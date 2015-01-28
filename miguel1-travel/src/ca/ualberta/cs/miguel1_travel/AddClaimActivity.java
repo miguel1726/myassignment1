@@ -24,8 +24,15 @@ public class AddClaimActivity extends Activity {
 	public void addnewClaim(View v){
 		Toast.makeText(this, "add claim", Toast.LENGTH_SHORT).show();
 		ClaimListController cl= new ClaimListController();
-		EditText textView = (EditText) findViewById(R.id.insert_claim_name);
-		cl.addClaim(new Claim(textView.getText().toString()));
+		EditText name = (EditText) findViewById(R.id.insert_claim_name);
+		EditText destination=(EditText) findViewById(R.id.new_exp_dest_ins);
+		EditText dateto=(EditText) findViewById(R.id.date_from_insert);
+		EditText datefrom=(EditText) findViewById(R.id.date_to_insert);
+		EditText reason=(EditText) findViewById(R.id.reason_claim);
+		
+		cl.addClaim(new Claim(name.getText().toString()), destination.getText().toString(), dateto.getText().toString(),datefrom.getText().toString(), reason.getText().toString() );
 	}
+	
+	
 
 }

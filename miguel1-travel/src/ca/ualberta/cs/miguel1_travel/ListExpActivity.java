@@ -1,10 +1,15 @@
 package ca.ualberta.cs.miguel1_travel;
 
+import java.util.ArrayList;
+import java.util.Collection;
+
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 //import android.widget.Toast;
 
 public class ListExpActivity extends Activity {
@@ -13,6 +18,12 @@ public class ListExpActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.view_exp);
+		ListView listView=(ListView) findViewById(R.id.expense_listview);
+		Collection<Expense> expenses = ExpenseListController.getExpenseList().getExpenses();
+		ArrayList<Expense> list = new ArrayList<Expense>(expenses);
+		
+		ArrayAdapter<Expense> expenseAdapter= new ArrayAdapter<Expense>(this, android.R.layout.simple_list_item_1, list);
+		listView.setAdapter(expenseAdapter);
 	}
 
 	@Override
@@ -36,4 +47,5 @@ public class ListExpActivity extends Activity {
     	Intent intent = new Intent(ListExpActivity.this, DeleteExpActivity.class);
     	startActivity(intent);
     }
+    
 }

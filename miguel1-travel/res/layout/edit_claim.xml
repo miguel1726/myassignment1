@@ -112,6 +112,7 @@
         android:layout_alignParentBottom="true"
         android:layout_alignRight="@+id/name_of_edit_claim"
         android:layout_marginBottom="31dp"
+        android:onClick="editClaim"
         android:text="@string/edit" />
 
 </RelativeLayout>

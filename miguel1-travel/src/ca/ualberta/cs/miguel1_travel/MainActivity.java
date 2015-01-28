@@ -21,18 +21,23 @@ import android.app.Activity;
 import android.content.Intent;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ListView;
 //import android.widget.Toast;
 
 //import android.widget.ArrayAdapter;
 //import android.widget.Spinner;
 public class MainActivity extends Activity {
-
+	static  ClaimListController cl;
 	//spinner code taken from youtube video: Android spinner example, by raghav shetty, link watch?v=o7Om-iUoiio on jan 16 2015
 	//Spinner cat;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ListView listView=(ListView) findViewById(R.id.List_of_claims);
+        
+       
+        
         
       //  cat=(Spinner) findViewById(R.id.select_edit_claim);
       //  ArrayAdapter<CharSequence> ar= ArrayAdapter.createFromResource(this,R.array.Category, android.R.layout.simple_list_item_1);
