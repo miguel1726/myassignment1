@@ -38,15 +38,18 @@ import android.widget.Toast;
 
 
 public class MainActivity extends Activity {
-	static  ClaimListController cl;
+	private  ClaimListController cl;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+         cl= ClaimListController.getController();
+         
+        
         setContentView(R.layout.activity_main);
         ListView listView=(ListView) findViewById(R.id.List_of_claims);
         Collection<Claim> claim= ClaimListController.getClaimList().getClaims();
-        final ArrayList<Claim> list = new ArrayList<Claim>(claim);
+        final ArrayList<Claim> list = new ArrayList<Claim>(claim);//make a new adapter class to take in the values of the stuff
         final ArrayAdapter<Claim> claimadapter= new ArrayAdapter<Claim>(this, android.R.layout.simple_list_item_1, list);
         listView.setAdapter(claimadapter);
         
@@ -70,9 +73,7 @@ public class MainActivity extends Activity {
 		public boolean onItemLongClick(AdapterView<?> adapterView, View view,
 				int position, long id) {
 			// TODO Auto-generated method stub
-			/*Toast.makeText(MainActivity.this, "delete"+ list.get(position).toString(), Toast.LENGTH_LONG).show();
-			Claim claim= list.get(position);
-			ClaimListController.getClaimList().removeClaim(claim);*/
+			
 			AlertDialog.Builder adb = new AlertDialog.Builder(MainActivity.this);
 			adb.setMessage("DELETE "+list.get(position).toString()+"?");
 			adb.setCancelable(true);

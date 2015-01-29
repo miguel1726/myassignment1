@@ -6,17 +6,17 @@ import java.util.Collection;
 
 
 public class ExpList {
-	protected ArrayList<Expense> expenses;
+	protected ArrayList<Expense> expenseslist;
 	protected ArrayList<Listener> listeners;
 	
 	public void ExpenseList(){
-			expenses=new ArrayList<Expense>();
+			expenseslist=new ArrayList<Expense>();
 			listeners= new ArrayList<Listener>();
 	}
 	
 		
 	public void addExp(Expense exp){
-		expenses.add(exp);
+		expenseslist.add(exp);
 		notifyListeners();
 	}
 
@@ -41,32 +41,32 @@ public class ExpList {
 	}
 	
 	public void deleteExp(Expense exp){
-		expenses.remove(exp);
+		expenseslist.remove(exp);
 		notifyListeners();
 	}
 	
 	public int size(){
-		return expenses.size();
+		return expenseslist.size();
 	}
 	
 	public int indexofExp(Object exp){
-		return expenses.indexOf(exp);
+		return expenseslist.indexOf(exp);
 	}
 	
 	public boolean contains(Expense exp){
-		return expenses.contains(exp);
+		return expenseslist.contains(exp);
 	}
 	
 	public Expense get(int index){
-		return expenses.get(index);
+		return expenseslist.get(index);
 		
 	}
 	
 	public Expense getExp(int index){
-		return expenses.get(index);
+		return expenseslist.get(index);
 	}
 	
 	public ArrayList<Expense> getExpenses(){
-		return expenses;
+		return expenseslist;
 	}
 }

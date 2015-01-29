@@ -8,6 +8,7 @@ import android.widget.Spinner;
 
 public class ExpenseListController {
 	private static ExpList expenselist=null;
+	private static ExpenseListController self=null;
 	
 	public static ExpList getExpenseList(){
 		if (expenselist == null){
@@ -52,6 +53,14 @@ public class ExpenseListController {
 		getExpenseList().deleteExp(expenselist.getExp(exp.getSelectedItemPosition()));
 		
 		
+	}
+
+	public static ExpenseListController getController() {
+		if(self == null){
+			self= new ExpenseListController
+		}
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 	

@@ -7,12 +7,16 @@ import android.widget.Spinner;
 public class ClaimListController {
 	
 	private static Claim_List claimlist=null;
+	private static ClaimListController self=null;
 	
 	public static Claim_List getClaimList(){
 		if (claimlist == null){
 			claimlist=new Claim_List();
 		}
 		return claimlist;
+	}
+	protected ClaimListController(Claim_List claim){
+		claimlist=claim;
 	}
 
 	public void addClaim(Claim claim, String destination, String datefrom, String dateto, String reason ) {
@@ -51,6 +55,15 @@ public class ClaimListController {
 	public void submitClaim(Claim claim) {
 		// TODO Auto-generated method stub
 		
+	}
+
+	public static ClaimListController getController() {
+		if(self == null){
+			self= new ClaimListController(null);
+		}
+	
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 }
