@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
@@ -16,6 +17,23 @@ public class EditExpActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.edit_expense);
+		
+		category=(Spinner) findViewById(R.id.cat_exp);
+	    ArrayAdapter<CharSequence> cat= ArrayAdapter.createFromResource(this,R.array.Category, android.R.layout.simple_list_item_1);
+	    cat.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
+	    category.setAdapter(cat);
+	    
+	    currency=(Spinner) findViewById(R.id.curr_exp_to_edit);
+	    ArrayAdapter<CharSequence> cur = ArrayAdapter.createFromResource(this,R.array.Currency, android.R.layout.simple_list_item_1);
+	    cur.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
+	    currency.setAdapter(cur);
+	    
+	    //exp= (Spinner) findViewById(R.id.select_exp_to_edit);
+	    //ArrayAdapter<Expense> exp= ArrayAdapter<Expense>
+	    
+	    
+	    
+	
 	}
 
 	@Override

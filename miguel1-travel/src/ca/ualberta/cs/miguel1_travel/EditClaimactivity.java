@@ -9,11 +9,16 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 public class EditClaimactivity extends Activity {
+	
+	
 	Spinner claim;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.edit_claim);
+		
+		
+		
 	}
 
 	@Override

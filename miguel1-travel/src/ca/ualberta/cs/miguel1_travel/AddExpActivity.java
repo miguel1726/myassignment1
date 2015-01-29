@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
@@ -11,11 +12,24 @@ import android.widget.Toast;
 public class AddExpActivity extends Activity {
 	private Spinner category;
 	private Spinner currency;
+	//spinner code taken from youtube video: Android spinner example, by raghav shetty, link watch?v=o7Om-iUoiio on jan 16 2015
+		
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.add_exp);
+		category=(Spinner) findViewById(R.id.select_edit_claim);
+	    ArrayAdapter<CharSequence> cat= ArrayAdapter.createFromResource(this,R.array.Category, android.R.layout.simple_list_item_1);
+	    cat.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
+	    category.setAdapter(cat);
+	    
+	    currency=(Spinner) findViewById(R.id.currency_exp_type);
+	    ArrayAdapter<CharSequence> cur = ArrayAdapter.createFromResource(this,R.array.Currency, android.R.layout.simple_list_item_1);
+	    cur.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
+	    currency.setAdapter(cur);
+	    
+	    
 	}
 
 	@Override

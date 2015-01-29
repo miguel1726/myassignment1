@@ -1,6 +1,5 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android" >
     <item android:id="@+id/edit_claim" android:title="@string/edit_claim" android:onClick="editClaim"></item>
-    <item android:id="@+id/delete_claim" android:title="@string/delete_claim" android:onClick="deleteClaim"></item>
     <item android:id="@+id/add_claim" android:title="@string/add_claim" android:onClick="addClaim"></item>
     <item android:id="@+id/mail_claim" android:title="@string/mail_claim" android:onClick="mailClaim"></item>
     <item android:id="@+id/status_claim" android:title="@string/check_claim_status" android:onClick="statusClaim"></item>

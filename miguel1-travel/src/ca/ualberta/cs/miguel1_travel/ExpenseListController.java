@@ -7,13 +7,13 @@ import java.util.Currency;
 import android.widget.Spinner;
 
 public class ExpenseListController {
-	private static ExpList expenses=null;
+	private static ExpList expenselist=null;
 	
 	public static ExpList getExpenseList(){
-		if (expenses == null){
-			expenses=new ExpList();
+		if (expenselist == null){
+			expenselist=new ExpList();
 		}
-		return expenses;
+		return expenselist;
 	}
 
 	public void addExp(String name, String date, Spinner category, String description,
@@ -37,7 +37,7 @@ public class ExpenseListController {
 		// TODO Auto-generated method stub
 		
 		
-		Expense expense= expenses.getExp(exp.getSelectedItemPosition());
+		Expense expense= expenselist.getExp(exp.getSelectedItemPosition());
 		expense.setCategory(category.getSelectedItem().toString());
 		expense.setDate(date);
 		expense.setAmount(new BigDecimal(amount));
@@ -49,7 +49,7 @@ public class ExpenseListController {
 
 	public void deleteClaim(Spinner exp) {
 		// TODO Auto-generated method stub
-		getExpenseList().deleteExp(expenses.getExp(exp.getSelectedItemPosition()));
+		getExpenseList().deleteExp(expenselist.getExp(exp.getSelectedItemPosition()));
 		
 		
 	}

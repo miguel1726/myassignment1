@@ -43,10 +43,10 @@ public class ClaimListController {
 		
 	}
 
-	public void deleteClaim(Claim claim) {
+	/*public void deleteClaim(Claim claim) {
 		// TODO Auto-generated method stub
-		getClaimList().deleteClaim(claim);
-	}
+		getClaimList().removeClaim(claim);
+	}*/
 
 	public void submitClaim(Claim claim) {
 		// TODO Auto-generated method stub

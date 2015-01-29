@@ -6,20 +6,43 @@ import java.util.Collection;
 
 
 public class ExpList {
-	protected ArrayList<Expense> expenses=null;
+	protected ArrayList<Expense> expenses;
+	protected ArrayList<Listener> listeners;
 	
 	public void ExpenseList(){
 			expenses=new ArrayList<Expense>();
-			
+			listeners= new ArrayList<Listener>();
 	}
 	
 		
 	public void addExp(Expense exp){
 		expenses.add(exp);
+		notifyListeners();
+	}
+
+	private void notifyListeners() {
+		for (Listener listener : getListeners()) {
+		listener.update();
+		}
+	}
+	
+	private ArrayList<Listener> getListeners() {
+		if (listeners == null ) {
+		listeners = new ArrayList<Listener>();
+		}
+		return listeners;
+	}
+	public void addListener(Listener l){
+		listeners.add(l);
+	}
+	
+	public void removeListener(Listener l){
+		listeners.remove(l);
 	}
 	
 	public void deleteExp(Expense exp){
 		expenses.remove(exp);
+		notifyListeners();
 	}
 	
 	public int size(){
@@ -43,7 +66,7 @@ public class ExpList {
 		return expenses.get(index);
 	}
 	
-	public Collection<Expense> getExpenses(){
+	public ArrayList<Expense> getExpenses(){
 		return expenses;
 	}
 }

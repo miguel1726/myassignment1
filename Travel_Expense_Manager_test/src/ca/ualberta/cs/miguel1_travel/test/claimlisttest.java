@@ -2,6 +2,8 @@ package ca.ualberta.cs.miguel1_travel.test;
 
 
 
+import java.util.ArrayList;
+
 import ca.ualberta.cs.miguel1_travel.Claim;
 import ca.ualberta.cs.miguel1_travel.Claim_List;
 import junit.framework.TestCase;
@@ -42,7 +44,7 @@ public class claimlisttest extends TestCase {
 		String claimname= "A claim";
 		Claim testClaim = new Claim(claimname);
 		claimlist.addClaim(testClaim);
-		Claim claim=claimlist.chooseClaims();
+		ArrayList<Claim> claim=claimlist.getClaims();
 		assertTrue("claim isnt null", claim!=null);
 		assertTrue("didnt choose right student", claim.equals(testClaim));
 		String claimnameB= "B claim";
@@ -52,7 +54,7 @@ public class claimlisttest extends TestCase {
 		for (int i= 0; i>claimArray.length;i++){
 				Claim targetClaim =claimArray[i];
 				int maxcount=1000;
-				while (!targetClaim.equals(claimlist.chooseClaims())){
+				while (!targetClaim.equals(claimlist.getClaims())){
 					//do nothing
 					maxcount --;
 				}

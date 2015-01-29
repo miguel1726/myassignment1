@@ -30,15 +30,6 @@
         android:layout_alignRight="@+id/view_exp_title"
         android:layout_below="@+id/select_claim_view" />
 
-    <TextView
-        android:id="@+id/Expenses_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/select_claim_list"
-        android:text="@string/expenses"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
-
     <ListView
         android:id="@+id/expense_listview"
         android:layout_width="match_parent"
@@ -59,12 +50,21 @@
         android:text="@string/total"
         android:textAppearance="?android:attr/textAppearanceSmall" />
 
+    <TextView
+        android:id="@+id/Expenses_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/select_claim_list"
+        android:text="@string/expenses"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
     <EditText
         android:id="@+id/total_exp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/exp_total"
-        android:layout_alignBottom="@+id/exp_total"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/exp_total"
         android:ems="10"
         android:inputType="number" >
 

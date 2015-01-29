@@ -22,11 +22,15 @@ public class Claim /*implements Serializable*/ {
 			this.claimname=claimname;
 			
 		}
-		
-	
+		public String getName(){
+			return this.claimname;
+		}
+		public String toString(){
+			return getName();
+		}
 	
 		public String getDestination() {
-			// TODO Auto-generated method stub
+			
 			return this.destination;
 		}
 		public void setDestination(String destination){

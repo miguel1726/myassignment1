@@ -16,33 +16,95 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 */	
 package ca.ualberta.cs.miguel1_travel;
 
+import java.util.ArrayList;
+import java.util.Collection;
+
 import android.os.Bundle;
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.content.DialogInterface.OnClickListener;
 import android.content.Intent;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemLongClickListener;
+import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 //import android.widget.Toast;
 
-//import android.widget.ArrayAdapter;
-//import android.widget.Spinner;
+
+
 public class MainActivity extends Activity {
 	static  ClaimListController cl;
-	//spinner code taken from youtube video: Android spinner example, by raghav shetty, link watch?v=o7Om-iUoiio on jan 16 2015
-	//Spinner cat;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ListView listView=(ListView) findViewById(R.id.List_of_claims);
+        Collection<Claim> claim= ClaimListController.getClaimList().getClaims();
+        final ArrayList<Claim> list = new ArrayList<Claim>(claim);
+        final ArrayAdapter<Claim> claimadapter= new ArrayAdapter<Claim>(this, android.R.layout.simple_list_item_1, list);
+        listView.setAdapter(claimadapter);
         
+        
+        //added a change observer
+       ClaimListController.getClaimList().addListener(new Listener(){
+    	   public void update(){
+    		   list.clear();
+    		   Collection<Claim> claims= ClaimListController.getClaimList().getClaims();
+    		   list.addAll(claims);
+    		   claimadapter.notifyDataSetChanged();
+    	   }
+       });
        
+        //get the total
+       
+       //delete by long click
+       listView.setOnItemLongClickListener(new OnItemLongClickListener() {
+
+		@Override
+		public boolean onItemLongClick(AdapterView<?> adapterView, View view,
+				int position, long id) {
+			// TODO Auto-generated method stub
+			/*Toast.makeText(MainActivity.this, "delete"+ list.get(position).toString(), Toast.LENGTH_LONG).show();
+			Claim claim= list.get(position);
+			ClaimListController.getClaimList().removeClaim(claim);*/
+			AlertDialog.Builder adb = new AlertDialog.Builder(MainActivity.this);
+			adb.setMessage("DELETE "+list.get(position).toString()+"?");
+			adb.setCancelable(true);
+			final int finalPosition = position;
+			adb.setPositiveButton("DELETE", new OnClickListener(){
+
+				@Override
+				public void onClick(DialogInterface dialog, int which) {
+					Claim claim= list.get(finalPosition);
+					ClaimListController.getClaimList().removeClaim(claim);
+					
+				}
+				
+			});
+			adb.setNegativeButton("CANCEL",new OnClickListener(){
+
+				@Override
+				public void onClick(DialogInterface dialog, int which) {
+					// TODO Auto-generated method stub
+					
+				}
+				
+			});
+			
+			adb.show();
+			
+			return false;
+		}
+    	   
+	});
         
-        
-      //  cat=(Spinner) findViewById(R.id.select_edit_claim);
-      //  ArrayAdapter<CharSequence> ar= ArrayAdapter.createFromResource(this,R.array.Category, android.R.layout.simple_list_item_1);
-      //  ar.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
-      //  cat.setAdapter(ar);
+    
         
     }
 
@@ -64,11 +126,8 @@ public class MainActivity extends Activity {
     	Intent intent = new Intent(MainActivity.this, AddClaimActivity.class);
     	startActivity(intent);
     }
-    public void deleteClaim(MenuItem menu){
-    	//Toast.makeText(this, "delete claim", Toast.LENGTH_SHORT).show();
-    	Intent intent = new Intent(MainActivity.this, DeleteClaimActivity.class);
-    	startActivity(intent);
-    }
+   
+    
     public void mailClaim(MenuItem menu){
     	//Toast.makeText(this, "mail claim", Toast.LENGTH_SHORT).show();
     	Intent intent = new Intent(MainActivity.this, MailClaimActivity.class);

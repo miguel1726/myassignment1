@@ -20,26 +20,6 @@ public class Expense /*implements Serializable*/{
 			this.name=name;
 		}
 		
-		/*public Expense(){
-			setDate(date);
-			setCategory(category);
-			setDescription("");
-			setAmount(new BigDecimal(0));
-			setType(Currency.getInstance("USD"));
-			
-			
-		}
-		public Expense(Expense exp){
-			copyFrom(exp);
-		}
-		public void copyFrom(Expense exp){
-			setDate(new String (exp.date));
-			setCategory(new String(exp.category));
-			setDescription(new String(exp.description));
-			setAmount( new BigDecimal(exp.amount.toString()));
-			setType(exp.currency);
-			
-		}*/
 		public String getName(){
 			return this.name;
 		}
