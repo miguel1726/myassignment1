@@ -38,12 +38,13 @@ import android.widget.Toast;
 
 
 public class MainActivity extends Activity {
-	private  ClaimListController cl;
+	
+	
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-         cl= ClaimListController.getController();
+        ClaimListManager.initManager(this.getApplicationContext());//copy into every activity
          
         
         setContentView(R.layout.activity_main);
@@ -63,6 +64,7 @@ public class MainActivity extends Activity {
     		   claimadapter.notifyDataSetChanged();
     	   }
        });
+       
        
         //get the total
        

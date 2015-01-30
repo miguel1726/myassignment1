@@ -29,11 +29,12 @@ public class ListExpActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.view_exp);
-		exp=ExpenseListController.getController();
+		 ClaimListManager.initManager(this.getApplicationContext());
+		
 		
 		ListView listView=(ListView) findViewById(R.id.expense_listview);
 		Collection<Expense> expenses = ExpenseListController.getExpenseList().getExpenses();
-		Toast.makeText(this, ExpenseListController.getExpenseList().getExpenses().toString(), 0).show();
+		
 		//final ArrayList<Expense> list = new ArrayList<Expense>(expenses);
 		/*
 		

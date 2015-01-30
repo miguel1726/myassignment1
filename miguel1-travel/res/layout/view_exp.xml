@@ -42,15 +42,6 @@
     </ListView>
 
     <TextView
-        android:id="@+id/exp_total"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/expense_listview"
-        android:layout_alignRight="@+id/select_claim_list"
-        android:text="@string/total"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
-
-    <TextView
         android:id="@+id/Expenses_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -58,17 +49,5 @@
         android:layout_below="@+id/select_claim_list"
         android:text="@string/expenses"
         android:textAppearance="?android:attr/textAppearanceSmall" />
-
-    <EditText
-        android:id="@+id/total_exp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/exp_total"
-        android:ems="10"
-        android:inputType="number" >
-
-        <requestFocus />
-    </EditText>
 
 </RelativeLayout>

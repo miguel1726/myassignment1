@@ -17,6 +17,7 @@ public class EditExpActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.edit_expense);
+		 ClaimListManager.initManager(this.getApplicationContext());
 		
 		category=(Spinner) findViewById(R.id.cat_exp);
 	    ArrayAdapter<CharSequence> cat= ArrayAdapter.createFromResource(this,R.array.Category, android.R.layout.simple_list_item_1);

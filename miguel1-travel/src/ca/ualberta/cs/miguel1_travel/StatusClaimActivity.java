@@ -12,6 +12,7 @@ public class StatusClaimActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.submit_claim);
+		 ClaimListManager.initManager(this.getApplicationContext());
 	}
 
 	@Override

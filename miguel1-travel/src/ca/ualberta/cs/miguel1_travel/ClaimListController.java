@@ -1,5 +1,8 @@
 package ca.ualberta.cs.miguel1_travel;
 
+import java.io.IOException;
+
+import android.content.Context;
 import android.widget.EditText;
 import android.widget.Spinner;
 /* A singleton class that stores the global Claim list*/
@@ -7,18 +10,49 @@ import android.widget.Spinner;
 public class ClaimListController {
 	
 	private static Claim_List claimlist=null;
-	private static ClaimListController self=null;
 	
+	Context context=null;
+	
+	
+	
+	
+	//gets global claim
 	public static Claim_List getClaimList(){
 		if (claimlist == null){
-			claimlist=new Claim_List();
+			try {
+				claimlist= ClaimListManager.getManager().loadClaimList();
+				claimlist.addListener(new Listener(){
+					public void update(){
+						saveClaimList();
+						
+					}
+				});
+			} catch (ClassNotFoundException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+				throw new RuntimeException("Could not deserialize claimlist from claimlistmanager");
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+				throw new RuntimeException("Could not deserialize claimlist from claimlistmanager");
+			}
 		}
 		return claimlist;
 	}
-	protected ClaimListController(Claim_List claim){
-		claimlist=claim;
+	
+	static public void saveClaimList(){
+		try{
+			ClaimListManager.getManager().saveClaimList(getClaimList());
+			
+		}catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			throw new RuntimeException("Could not deserialize claimlist from claimlistmanager");
+		}
 	}
 
+	
+	
 	public void addClaim(Claim claim, String destination, String datefrom, String dateto, String reason ) {
 		// TODO Auto-generated method stub
 		claim.setDestination(destination);
@@ -47,23 +81,12 @@ public class ClaimListController {
 		
 	}
 
-	/*public void deleteClaim(Claim claim) {
-		// TODO Auto-generated method stub
-		getClaimList().removeClaim(claim);
-	}*/
+	
 
 	public void submitClaim(Claim claim) {
 		// TODO Auto-generated method stub
 		
 	}
 
-	public static ClaimListController getController() {
-		if(self == null){
-			self= new ClaimListController(null);
-		}
-	
-		// TODO Auto-generated method stub
-		return null;
-	}
 	
 }

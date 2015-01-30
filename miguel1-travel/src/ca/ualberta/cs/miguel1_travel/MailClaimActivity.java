@@ -11,11 +11,13 @@ import android.widget.Toast;
 
 public class MailClaimActivity extends Activity {
 	private Spinner spinner;
+	 
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.mail_claim);
+		 ClaimListManager.initManager(this.getApplicationContext());
 		//ArrayAdapter<T>.createFromResource(this, R.array., textViewResId)
 	}
 

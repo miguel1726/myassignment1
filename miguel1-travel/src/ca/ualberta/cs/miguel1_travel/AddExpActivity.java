@@ -19,11 +19,13 @@ public class AddExpActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.add_exp);
+		ClaimListManager.initManager(this.getApplicationContext());
+		//spiners for category
 		category=(Spinner) findViewById(R.id.select_edit_claim);
 	    ArrayAdapter<CharSequence> cat= ArrayAdapter.createFromResource(this,R.array.Category, android.R.layout.simple_list_item_1);
 	    cat.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
 	    category.setAdapter(cat);
-	    
+	    //spinners for currency
 	    currency=(Spinner) findViewById(R.id.currency_exp_type);
 	    ArrayAdapter<CharSequence> cur = ArrayAdapter.createFromResource(this,R.array.Currency, android.R.layout.simple_list_item_1);
 	    cur.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);

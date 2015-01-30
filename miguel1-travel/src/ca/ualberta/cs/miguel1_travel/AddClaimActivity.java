@@ -13,6 +13,7 @@ public class AddClaimActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.add_claim);
+		 ClaimListManager.initManager(this.getApplicationContext());
 	}
 
 	@Override

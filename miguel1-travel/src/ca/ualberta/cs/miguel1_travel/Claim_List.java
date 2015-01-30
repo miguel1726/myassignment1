@@ -1,58 +1,45 @@
 package ca.ualberta.cs.miguel1_travel;
 
+import java.io.IOException;
+import java.io.Serializable;
 import java.util.ArrayList;
 
 
 	
 
-public class Claim_List {
+public class Claim_List implements Serializable{
 	
-	protected ArrayList<Claim> claimList;
-	protected ArrayList<Listener> listeners;
+	/**
+	 * claim list serialization id
+	 */
+	private static final long serialVersionUID = -6867357258868198199L;
+	
+	protected ArrayList<Claim> claimList= null;
+	
+	protected transient ArrayList<Listener> listeners= null;//
+	
+	
 	public Claim_List() {
 		claimList=new ArrayList<Claim>();
-		listeners= new ArrayList<Listener>();
+		listeners= new ArrayList<Listener>();//
 	}
 
 	public ArrayList<Claim> getClaims() {
-		// TODO Auto-generated method stub
 		return claimList;
 	}
-
+	
 	public void addClaim(Claim claim) {
-		// TODO Auto-generated method stub
 		claimList.add(claim);
-		notifyListeners();
+		notifyListeners();//
 	}
 
 	public void removeClaim(Claim claim) {
 		claimList.remove(claim);
-		notifyListeners();
+		notifyListeners();//
 		
 	}
 
-	private void notifyListeners() {
-		for (Listener listener : getListeners()) {
-		listener.update();
-		}
-	}
-	private ArrayList<Listener> getListeners() {
-		if (listeners == null ) {
-		listeners = new ArrayList<Listener>();
-		}
-		return listeners;
-	}
-	
-	public void addListener(Listener l){
-		listeners.add(l);
-	}
-	public void removeListener(Listener l){
-		listeners.remove(l);
-	}
-	
-
 	public Claim getClaim(Integer index) {
-		// TODO Auto-generated method stub
 		return claimList.get(index);
 	}
 
@@ -60,13 +47,31 @@ public class Claim_List {
 			return claimList.size();
 	}
 	
+	public int indexOf(Object object){
+		return claimList.indexOf(object);
+	}
+	
 	public boolean contains(Claim claim){
 		return claimList.contains(claim);
 	}
 	
-
-	
-	
-	
+	private ArrayList<Listener> getListeners(){//
+		if (listeners ==null){
+			listeners = new ArrayList<Listener>();
+		}
+		return listeners;
+	}
+	private void notifyListeners() {//
+		for (Listener listener : getListeners()) {
+		listener.update();
+		}
+	}
+		
+	public void addListener(Listener l){//
+		getListeners().add(l);
+	}
+	public void removeListener(Listener l){
+		getListeners().remove(l);
+	}
 	
 }
