@@ -7,6 +7,12 @@ import java.util.ArrayList;
 
 	
 
+/**
+ * @author  miguel1
+ * 
+ * Class that consist of ArrayList of Claims and its functions:add,remove,get, size,etc
+ * also includes listeners to update the claim_list
+ */
 public class Claim_List implements Serializable{
 	
 	/**
@@ -16,6 +22,9 @@ public class Claim_List implements Serializable{
 	
 	protected ArrayList<Claim> claimList= null;
 	
+	/**
+	 * @uml.property  name="listeners"
+	 */
 	protected transient ArrayList<Listener> listeners= null;//
 	
 	
@@ -55,6 +64,10 @@ public class Claim_List implements Serializable{
 		return claimList.contains(claim);
 	}
 	
+	/**
+	 * @return
+	 * @uml.property  name="listeners"
+	 */
 	private ArrayList<Listener> getListeners(){//
 		if (listeners ==null){
 			listeners = new ArrayList<Listener>();

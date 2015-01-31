@@ -1,12 +1,23 @@
 package ca.ualberta.cs.miguel1_travel;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collection;
 
 
 
-public class ExpList {
+/**list containing the expenses , functions and listeners
+ * @author  miguel1
+ */
+public class ExpList implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -2916038907765627881L;
 	protected ArrayList<Expense> expenseslist;
+	/**
+	 * @uml.property  name="listeners"
+	 */
 	protected ArrayList<Listener> listeners;
 	
 	public void ExpenseList(){
@@ -26,6 +37,10 @@ public class ExpList {
 		}
 	}
 	
+	/**
+	 * @return
+	 * @uml.property  name="listeners"
+	 */
 	private ArrayList<Listener> getListeners() {
 		if (listeners == null ) {
 		listeners = new ArrayList<Listener>();

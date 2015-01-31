@@ -7,8 +7,15 @@ import android.widget.EditText;
 import android.widget.Spinner;
 /* A singleton class that stores the global Claim list*/
 
+/**
+ * @author  miguel1
+ */
 public class ClaimListController {
 	
+	/**
+	 * @uml.property  name="claimlist"
+	 * @uml.associationEnd  
+	 */
 	private static Claim_List claimlist=null;
 	
 	Context context=null;

@@ -36,81 +36,71 @@ import android.widget.Toast;
 //import android.widget.Toast;
 
 
-
+//Main activity displays the list of all the Claims that have added 
+//you can move from this view to add, delete, submit, mail claim and view expenses
+/**
+ * @author  miguel1
+ */
 public class MainActivity extends Activity {
 	
+	/**
+	 * @uml.property  name="cl"
+	 * @uml.associationEnd  
+	 */
+	private ClaimListController cl;
 	
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        ClaimListManager.initManager(this.getApplicationContext());//copy into every activity
-         
-        
         setContentView(R.layout.activity_main);
+        ClaimListManager.initManager(this.getApplicationContext());
+            
+        
+    }   
+        
+     
+    //OnResume loads the claim list on the list view and sets the option of delete on long click
+    @Override
+    protected void onResume() {
+        super.onResume();
+        setContentView(R.layout.activity_main);
+       
+        
         ListView listView=(ListView) findViewById(R.id.List_of_claims);
-        Collection<Claim> claim= ClaimListController.getClaimList().getClaims();
-        final ArrayList<Claim> list = new ArrayList<Claim>(claim);//make a new adapter class to take in the values of the stuff
+        Collection<Claim> claims=ClaimListController.getClaimList().getClaims();
+        final ArrayList<Claim> list= new ArrayList<Claim>(claims);
         final ArrayAdapter<Claim> claimadapter= new ArrayAdapter<Claim>(this, android.R.layout.simple_list_item_1, list);
         listView.setAdapter(claimadapter);
         
-        
-        //added a change observer
-       ClaimListController.getClaimList().addListener(new Listener(){
-    	   public void update(){
-    		   list.clear();
-    		   Collection<Claim> claims= ClaimListController.getClaimList().getClaims();
-    		   list.addAll(claims);
-    		   claimadapter.notifyDataSetChanged();
-    	   }
-       });
-       
-       
-        //get the total
-       
-       //delete by long click
-       listView.setOnItemLongClickListener(new OnItemLongClickListener() {
-
-		@Override
+        //delete by long click
+        listView.setOnItemLongClickListener(new OnItemLongClickListener() {
 		public boolean onItemLongClick(AdapterView<?> adapterView, View view,
-				int position, long id) {
-			// TODO Auto-generated method stub
-			
-			AlertDialog.Builder adb = new AlertDialog.Builder(MainActivity.this);
-			adb.setMessage("DELETE "+list.get(position).toString()+"?");
-			adb.setCancelable(true);
-			final int finalPosition = position;
-			adb.setPositiveButton("DELETE", new OnClickListener(){
+ 				int position, long id) {
+ 						
+ 			AlertDialog.Builder adb = new AlertDialog.Builder(MainActivity.this);
+ 			adb.setMessage("DELETE "+list.get(position).toString()+"?");
+ 			adb.setCancelable(true);
+ 			final int finalPosition = position;
+ 			adb.setPositiveButton("DELETE", new OnClickListener(){
 
-				@Override
-				public void onClick(DialogInterface dialog, int which) {
-					Claim claim= list.get(finalPosition);
-					ClaimListController.getClaimList().removeClaim(claim);
-					
-				}
-				
-			});
-			adb.setNegativeButton("CANCEL",new OnClickListener(){
+ 				@Override
+ 				public void onClick(DialogInterface dialog, int which) {
+ 					Claim claim= list.get(finalPosition);
+ 					ClaimListController.getClaimList().removeClaim(claim);
+ 				}
+ 			});
+ 			adb.setNegativeButton("CANCEL",new OnClickListener(){
 
-				@Override
-				public void onClick(DialogInterface dialog, int which) {
-					// TODO Auto-generated method stub
-					
-				}
-				
-			});
-			
-			adb.show();
-			
-			return false;
-		}
-    	   
-	});
-        
-    
-        
+ 				@Override
+ 				public void onClick(DialogInterface dialog, int which) {
+ 					}
+ 				});
+ 			adb.show();
+ 			return false;
+ 		}
+     });
+              
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -120,29 +110,17 @@ public class MainActivity extends Activity {
     }
     
     public void editClaim(MenuItem menu){
-    	//Toast.makeText(this, "Edit claim", Toast.LENGTH_SHORT).show();
+    	//option to go the edit a claim
     	Intent intent = new Intent(MainActivity.this, EditClaimactivity.class);
     	startActivity(intent);
     }
     public void addClaim(MenuItem menu){
-    	//Toast.makeText(this, "add claim", Toast.LENGTH_SHORT).show();
+    	//option to go to add a claim
     	Intent intent = new Intent(MainActivity.this, AddClaimActivity.class);
     	startActivity(intent);
     }
-   
-    
-    public void mailClaim(MenuItem menu){
-    	//Toast.makeText(this, "mail claim", Toast.LENGTH_SHORT).show();
-    	Intent intent = new Intent(MainActivity.this, MailClaimActivity.class);
-    	startActivity(intent);
-    }
-    public void statusClaim(MenuItem menu){
-    	//Toast.makeText(this, "status of claim", Toast.LENGTH_SHORT).show();
-    	Intent intent = new Intent(MainActivity.this, StatusClaimActivity.class);
-    	startActivity(intent);
-    }
-    public void viewExpenseofClaim(MenuItem menu){
-    	//Toast.makeText(this, "expenses in claim", Toast.LENGTH_SHORT).show();
+   //option to viewExpenses      
+     public void viewExpenseofClaim(MenuItem menu){
     	Intent intent = new Intent(MainActivity.this, ListExpActivity.class);
     	startActivity(intent);
     }

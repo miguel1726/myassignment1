@@ -66,5 +66,8 @@
     <string name="title_activity_delete_exp">DeleteExpActivity</string>
     <string name="claim_name">Claim Name</string>
     <string name="name_">"Name "</string>
+    <string name="large_text">Large Text</string>
+    <string name="status">STATUS</string>
+    <string name="claim">CLAIM</string>
 
 </resources>

@@ -6,7 +6,15 @@ import java.util.Currency;
 
 import android.widget.Spinner;
 
+/**
+ * Controller in charge of main functions of the expenselist: add, edit
+ * @author  miguel1
+ */
 public class ExpenseListController {
+	/**
+	 * @uml.property  name="expenselist"
+	 * @uml.associationEnd  
+	 */
 	private static ExpList expenselist=null;
 	
 	
@@ -48,12 +56,6 @@ public class ExpenseListController {
 		
 	}
 
-	public void deleteClaim(Spinner exp) {
-		// TODO Auto-generated method stub
-		getExpenseList().deleteExp(expenselist.getExp(exp.getSelectedItemPosition()));
-		
-		
-	}
 
 	
 	

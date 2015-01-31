@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="miguel1_travel" size="1604,1512" id="ca.ualberta.cs.miguel1_travel" metadata="uml2-1.0" initialized="true" scrolledX="51" tag="1000" key="32303037303533312D31303030206D696775656C312D74726176656C2F6D696775656C31">
+  <children xsi:type="editmodel:ClassEditModel" name="AddExpActivity" location="1231,194" size="160,85" id="ca.ualberta.cs.miguel1_travel/AddExpActivity">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="137,36">
+      <children xsi:type="editmodel:MethodEditModel" name="addnewExp" id="ca.ualberta.cs.miguel1_travel/AddExpActivity#addnewExp(Landroid.view.View;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="onCreateOptionsMenu" id="ca.ualberta.cs.miguel1_travel/AddExpActivity#onCreateOptionsMenu(Landroid.view.Menu;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.miguel1_travel/AddExpActivity-Standard::Call->ca.ualberta.cs.miguel1_travel/ClaimListManager" source="//@children.0" target="//@children.9" targetEnd="//@children.0/@sourceConnections.0/@children.2" label="//@children.0/@sourceConnections.0/@children.0" sourceEnd="//@children.0/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Call»" size="30,12" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,42" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="165,74"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.miguel1_travel/AddExpActivity-Standard::Call->ca.ualberta.cs.miguel1_travel/ExpenseListController*ca.ualberta.cs.miguel1_travel/AddExpActivity-Standard::Instantiate->ca.ualberta.cs.miguel1_travel/ExpenseListController*ca.ualberta.cs.miguel1_travel/AddExpActivity-Soyatec::Import->ca.ualberta.cs.miguel1_travel/ExpenseListController" source="//@children.0" target="//@children.5" targetEnd="//@children.0/@sourceConnections.1/@children.2" label="//@children.0/@sourceConnections.1/@children.0" sourceEnd="//@children.0/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate, Call, Import»" size="127,12" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="66,85" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="125,0"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.9/@sourceConnections.1 //@children.4/@sourceConnections.0 //@children.4/@sourceConnections.3" name="CustomAdapter" location="111,868" size="149,121" id="ca.ualberta.cs.miguel1_travel/CustomAdapter">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="117,72">
+      <children xsi:type="editmodel:MethodEditModel" name="CustomAdapter" id="ca.ualberta.cs.miguel1_travel/CustomAdapter#CustomAdapter(Landroid.app.Activity;ILjava.util.ArrayList;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getCustomView" location="-18,61" id="ca.ualberta.cs.miguel1_travel/CustomAdapter#getCustomView(ILandroid.view.View;Landroid.view.ViewGroup;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getDropDownView" id="ca.ualberta.cs.miguel1_travel/CustomAdapter#getDropDownView(ILandroid.view.View;Landroid.view.ViewGroup;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getView" id="ca.ualberta.cs.miguel1_travel/CustomAdapter#getView(ILandroid.view.View;Landroid.view.ViewGroup;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.miguel1_travel/CustomAdapter-Standard::Call->ca.ualberta.cs.miguel1_travel/ClaimListManager*ca.ualberta.cs.miguel1_travel/CustomAdapter-Soyatec::Import->ca.ualberta.cs.miguel1_travel/ClaimListManager" source="//@children.1" target="//@children.9" targetEnd="//@children.1/@sourceConnections.0/@children.2" label="//@children.1/@sourceConnections.0/@children.0" sourceEnd="//@children.1/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Call, Import»" size="68,12" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="149,2" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,169"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.miguel1_travel/CustomAdapter-Soyatec::Import->ca.ualberta.cs.miguel1_travel/Claim" source="//@children.1" target="//@children.7" targetEnd="//@children.1/@sourceConnections.1/@children.2" label="//@children.1/@sourceConnections.1/@children.0" sourceEnd="//@children.1/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="44,12" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="149,61" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,60"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.miguel1_travel/CustomAdapter-Standard::Call->ca.ualberta.cs.miguel1_travel/Claim_List" source="//@children.1" target="//@children.12" targetEnd="//@children.1/@sourceConnections.2/@children.2" label="//@children.1/@sourceConnections.2/@children.0" sourceEnd="//@children.1/@sourceConnections.2/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Call»" size="30,12" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="149,32" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,161"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.5/@sourceConnections.0" name="ListExpActivity" location="1364,344" size="220,139" id="ca.ualberta.cs.miguel1_travel/ListExpActivity">
+    <children xsi:type="editmodel:CompartmentEditModel" size="197,36">
+      <children xsi:type="editmodel:AttributeEditModel" name="claim" id="ca.ualberta.cs.miguel1_travel/ListExpActivity#claim"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="claimadapter" id="ca.ualberta.cs.miguel1_travel/ListExpActivity#claimadapter"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="137,54">
+      <children xsi:type="editmodel:MethodEditModel" name="addExp" id="ca.ualberta.cs.miguel1_travel/ListExpActivity#addExp(Landroid.view.MenuItem;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="editExp" id="ca.ualberta.cs.miguel1_travel/ListExpActivity#editExp(Landroid.view.MenuItem;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="onCreateOptionsMenu" id="ca.ualberta.cs.miguel1_travel/ListExpActivity#onCreateOptionsMenu(Landroid.view.Menu;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.miguel1_travel/ListExpActivity-Standard::Call->ca.ualberta.cs.miguel1_travel/ClaimListManager" source="//@children.2" target="//@children.9" targetEnd="//@children.2/@sourceConnections.0/@children.2" label="//@children.2/@sourceConnections.0/@children.0" sourceEnd="//@children.2/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Call»" size="30,12" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,14" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="165,196"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.miguel1_travel/ListExpActivity-Soyatec::Import->ca.ualberta.cs.miguel1_travel/ExpenseListController" source="//@children.2" target="//@children.5" targetEnd="//@children.2/@sourceConnections.1/@children.2" label="//@children.2/@sourceConnections.1/@children.0" sourceEnd="//@children.2/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="44,12" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,133" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="207,10"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.8/@sourceConnections.1 //@children.4/@sourceConnections.2 //@children.10/@sourceConnections.1" name="ClaimListController" location="659,449" size="173,175" id="ca.ualberta.cs.miguel1_travel/ClaimListController">
+    <children xsi:type="editmodel:CompartmentEditModel" size="98,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="context" id="ca.ualberta.cs.miguel1_travel/ClaimListController#context"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="96,108">
+      <children xsi:type="editmodel:MethodEditModel" name="addClaim" id="ca.ualberta.cs.miguel1_travel/ClaimListController#addClaim(Lca.ualberta.cs.miguel1_travel.Claim;Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="editClaim" id="ca.ualberta.cs.miguel1_travel/ClaimListController#editClaim(Lca.ualberta.cs.miguel1_travel.Claim;Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getClaimList" id="ca.ualberta.cs.miguel1_travel/ClaimListController#getClaimList()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="mailClaim" id="ca.ualberta.cs.miguel1_travel/ClaimListController#mailClaim(Landroid.widget.Spinner;Landroid.widget.EditText;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="saveClaimList" id="ca.ualberta.cs.miguel1_travel/ClaimListController#saveClaimList()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="submitClaim" id="ca.ualberta.cs.miguel1_travel/ClaimListController#submitClaim(Lca.ualberta.cs.miguel1_travel.Claim;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="ca.ualberta.cs.miguel1_travel/Claim_List@claimlist+ca.ualberta.cs.miguel1_travel/ClaimListController@" source="//@children.3" target="//@children.12" targetEnd="//@children.3/@sourceConnections.0/@children.2" label="//@children.3/@sourceConnections.0/@children.0" sourceEnd="//@children.3/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,12" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,165" id="ca.ualberta.cs.miguel1_travel/Claim_List@claimlist+ca.ualberta.cs.miguel1_travel/ClaimListController@|ca.ualberta.cs.miguel1_travel/ClaimListController#" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="claimlist" location="118,0" id="ca.ualberta.cs.miguel1_travel/Claim_List@claimlist+ca.ualberta.cs.miguel1_travel/ClaimListController@|ca.ualberta.cs.miguel1_travel/Claim_List#claimlist" multiplicityLabel="//@children.3/@sourceConnections.0/@children.2/@children.2" roleLabel="//@children.3/@sourceConnections.0/@children.2/@children.0" orderingLabel="//@children.3/@sourceConnections.0/@children.2/@children.1" scopeKind="1" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - claimlist" location="584,708" size="50,12" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="{order}" location="648,720" size="38,12" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="1" location="628,720" size="6,12" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="ca.ualberta.cs.miguel1_travel/ClaimListController@cl+ca.ualberta.cs.miguel1_travel/MainActivity@" source="//@children.3" target="//@children.10" targetEnd="//@children.3/@sourceConnections.1/@children.2" label="//@children.3/@sourceConnections.1/@children.0" sourceEnd="//@children.3/@sourceConnections.1/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,12" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="cl" location="20,0" id="ca.ualberta.cs.miguel1_travel/ClaimListController@cl+ca.ualberta.cs.miguel1_travel/MainActivity@|ca.ualberta.cs.miguel1_travel/ClaimListController#cl" attachSource="true" multiplicityLabel="//@children.3/@sourceConnections.1/@children.1/@children.1" roleLabel="//@children.3/@sourceConnections.1/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - cl" location="655,430" size="17,12" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="686,430" size="18,12" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="138,121" id="ca.ualberta.cs.miguel1_travel/ClaimListController@cl+ca.ualberta.cs.miguel1_travel/MainActivity@|ca.ualberta.cs.miguel1_travel/MainActivity#"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.miguel1_travel/ClaimListController-Standard::Call->ca.ualberta.cs.miguel1_travel/ClaimListManager" source="//@children.3" target="//@children.9" targetEnd="//@children.3/@sourceConnections.2/@children.2" label="//@children.3/@sourceConnections.2/@children.0" sourceEnd="//@children.3/@sourceConnections.2/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Call»" size="30,12" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="173,7" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,181"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.miguel1_travel/ClaimListController-Standard::Call->ca.ualberta.cs.miguel1_travel/Claim*ca.ualberta.cs.miguel1_travel/ClaimListController-Soyatec::Import->ca.ualberta.cs.miguel1_travel/Claim" source="//@children.3" target="//@children.7" targetEnd="//@children.3/@sourceConnections.3/@children.2" label="//@children.3/@sourceConnections.3/@children.0" sourceEnd="//@children.3/@sourceConnections.3/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Call, Import»" size="68,12" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="138,175" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="33,0"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.miguel1_travel/ClaimListController-Standard::Call->ca.ualberta.cs.miguel1_travel/Claim_List*ca.ualberta.cs.miguel1_travel/ClaimListController-Soyatec::Import->ca.ualberta.cs.miguel1_travel/Claim_List" source="//@children.3" target="//@children.12" targetEnd="//@children.3/@sourceConnections.4/@children.2" label="//@children.3/@sourceConnections.4/@children.0" sourceEnd="//@children.3/@sourceConnections.4/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Call, Import»" size="68,12" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,169" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="128,15"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.4/@sourceConnections.1" name="EditClaimactivity" location="105,161" size="164,121" id="ca.ualberta.cs.miguel1_travel/EditClaimactivity">
+    <children xsi:type="editmodel:CompartmentEditModel" size="141,36">
+      <children xsi:type="editmodel:AttributeEditModel" name="claims" id="ca.ualberta.cs.miguel1_travel/EditClaimactivity#claims"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="claimspinner" id="ca.ualberta.cs.miguel1_travel/EditClaimactivity#claimspinner"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="137,36">
+      <children xsi:type="editmodel:MethodEditModel" name="editClaim" id="ca.ualberta.cs.miguel1_travel/EditClaimactivity#editClaim(Landroid.view.View;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="onCreateOptionsMenu" id="ca.ualberta.cs.miguel1_travel/EditClaimactivity#onCreateOptionsMenu(Landroid.view.Menu;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="ca.ualberta.cs.miguel1_travel/CustomAdapter@adapter+ca.ualberta.cs.miguel1_travel/EditClaimactivity@" source="//@children.4" target="//@children.1" targetEnd="//@children.4/@sourceConnections.0/@children.2" label="//@children.4/@sourceConnections.0/@children.0" sourceEnd="//@children.4/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,12" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="80,121" id="ca.ualberta.cs.miguel1_travel/CustomAdapter@adapter+ca.ualberta.cs.miguel1_travel/EditClaimactivity@|ca.ualberta.cs.miguel1_travel/EditClaimactivity#" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="adapter" location="74,0" id="ca.ualberta.cs.miguel1_travel/CustomAdapter@adapter+ca.ualberta.cs.miguel1_travel/EditClaimactivity@|ca.ualberta.cs.miguel1_travel/CustomAdapter#adapter" multiplicityLabel="//@children.4/@sourceConnections.0/@children.2/@children.1" roleLabel="//@children.4/@sourceConnections.0/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" ~ adapter" location="192,849" size="52,12" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="160,849" size="18,12" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="ca.ualberta.cs.miguel1_travel/EditClaimactivity@activity+ca.ualberta.cs.miguel1_travel/EditClaimactivity@" source="//@children.4" target="//@children.4" targetEnd="//@children.4/@sourceConnections.1/@children.2" label="//@children.4/@sourceConnections.1/@children.0" sourceEnd="//@children.4/@sourceConnections.1/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,12" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="activity" location="0,20" id="ca.ualberta.cs.miguel1_travel/EditClaimactivity@activity+ca.ualberta.cs.miguel1_travel/EditClaimactivity@|ca.ualberta.cs.miguel1_travel/EditClaimactivity#activity" anchorKind="FixedAtEdge" attachSource="true" multiplicityLabel="//@children.4/@sourceConnections.1/@children.1/@children.1" roleLabel="//@children.4/@sourceConnections.1/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" ~ activity" location="49,188" size="49,12" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="1" location="92,162" size="6,12" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="20,0" id="ca.ualberta.cs.miguel1_travel/EditClaimactivity@activity+ca.ualberta.cs.miguel1_travel/EditClaimactivity@|ca.ualberta.cs.miguel1_travel/EditClaimactivity#" anchorKind="FixedAtEdge"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.miguel1_travel/EditClaimactivity-Standard::Call->ca.ualberta.cs.miguel1_travel/ClaimListController*ca.ualberta.cs.miguel1_travel/EditClaimactivity-Standard::Instantiate->ca.ualberta.cs.miguel1_travel/ClaimListController*ca.ualberta.cs.miguel1_travel/EditClaimactivity-Soyatec::Import->ca.ualberta.cs.miguel1_travel/ClaimListController" source="//@children.4" target="//@children.3" targetEnd="//@children.4/@sourceConnections.2/@children.2" label="//@children.4/@sourceConnections.2/@children.0" sourceEnd="//@children.4/@sourceConnections.2/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate, Call, Import»" size="127,12" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="164,106" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,38"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.miguel1_travel/EditClaimactivity-Standard::Instantiate->ca.ualberta.cs.miguel1_travel/CustomAdapter*ca.ualberta.cs.miguel1_travel/EditClaimactivity-Soyatec::Import->ca.ualberta.cs.miguel1_travel/CustomAdapter" source="//@children.4" target="//@children.1" targetEnd="//@children.4/@sourceConnections.3/@children.2" label="//@children.4/@sourceConnections.3/@children.0" sourceEnd="//@children.4/@sourceConnections.3/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate, Import»" size="103,12" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="60,121" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="39,0"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.miguel1_travel/EditClaimactivity-Standard::Call->ca.ualberta.cs.miguel1_travel/Claim_List" source="//@children.4" target="//@children.12" targetEnd="//@children.4/@sourceConnections.4/@children.2" label="//@children.4/@sourceConnections.4/@children.0" sourceEnd="//@children.4/@sourceConnections.4/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Call»" size="30,12" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="122,121" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="1,0"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.miguel1_travel/EditClaimactivity-Standard::Instantiate->ca.ualberta.cs.miguel1_travel/Claim*ca.ualberta.cs.miguel1_travel/EditClaimactivity-Soyatec::Import->ca.ualberta.cs.miguel1_travel/Claim" source="//@children.4" target="//@children.7" targetEnd="//@children.4/@sourceConnections.5/@children.2" label="//@children.4/@sourceConnections.5/@children.0" sourceEnd="//@children.4/@sourceConnections.5/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate, Import»" size="103,12" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="133,121" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,48"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.miguel1_travel/EditClaimactivity-Standard::Call->ca.ualberta.cs.miguel1_travel/ClaimListManager" source="//@children.4" target="//@children.9" targetEnd="//@children.4/@sourceConnections.6/@children.2" label="//@children.4/@sourceConnections.6/@children.0" sourceEnd="//@children.4/@sourceConnections.6/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Call»" size="30,12" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="164,60" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,59"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.6/@sourceConnections.0 //@children.0/@sourceConnections.1 //@children.11/@sourceConnections.1 //@children.2/@sourceConnections.1" name="ExpenseListController" location="1172,869" size="192,121" id="ca.ualberta.cs.miguel1_travel/ExpenseListController">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="103,72">
+      <children xsi:type="editmodel:MethodEditModel" name="addExp" id="ca.ualberta.cs.miguel1_travel/ExpenseListController#addExp(Ljava.lang.String;Ljava.lang.String;Landroid.widget.Spinner;Ljava.lang.String;Ljava.lang.String;Landroid.widget.Spinner;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="deleteClaim" id="ca.ualberta.cs.miguel1_travel/ExpenseListController#deleteClaim(Landroid.widget.Spinner;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="editExp" id="ca.ualberta.cs.miguel1_travel/ExpenseListController#editExp(Landroid.widget.Spinner;Ljava.lang.String;Landroid.widget.Spinner;Ljava.lang.String;Ljava.lang.String;Landroid.widget.Spinner;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getExpenseList" id="ca.ualberta.cs.miguel1_travel/ExpenseListController#getExpenseList()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="ca.ualberta.cs.miguel1_travel/ExpenseListController@exp+ca.ualberta.cs.miguel1_travel/ListExpActivity@" source="//@children.5" target="//@children.2" targetEnd="//@children.5/@sourceConnections.0/@children.2" label="//@children.5/@sourceConnections.0/@children.0" sourceEnd="//@children.5/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,12" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="exp" location="182,0" id="ca.ualberta.cs.miguel1_travel/ExpenseListController@exp+ca.ualberta.cs.miguel1_travel/ListExpActivity@|ca.ualberta.cs.miguel1_travel/ExpenseListController#exp" attachSource="true" multiplicityLabel="//@children.5/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.5/@sourceConnections.0/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - exp" location="1321,850" size="26,12" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="1361,850" size="18,12" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,129" id="ca.ualberta.cs.miguel1_travel/ExpenseListController@exp+ca.ualberta.cs.miguel1_travel/ListExpActivity@|ca.ualberta.cs.miguel1_travel/ListExpActivity#"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.miguel1_travel/ExpenseListController-Standard::Call->ca.ualberta.cs.miguel1_travel/Expense*ca.ualberta.cs.miguel1_travel/ExpenseListController-Standard::Instantiate->ca.ualberta.cs.miguel1_travel/Expense*ca.ualberta.cs.miguel1_travel/ExpenseListController-Soyatec::Import->ca.ualberta.cs.miguel1_travel/Expense" source="//@children.5" target="//@children.13" targetEnd="//@children.5/@sourceConnections.1/@children.2" label="//@children.5/@sourceConnections.1/@children.0" sourceEnd="//@children.5/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate, Call, Import»" size="127,12" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="112,121" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="69,0"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.miguel1_travel/ExpenseListController-Standard::Call->ca.ualberta.cs.miguel1_travel/ExpList*ca.ualberta.cs.miguel1_travel/ExpenseListController-Standard::Instantiate->ca.ualberta.cs.miguel1_travel/ExpList*ca.ualberta.cs.miguel1_travel/ExpenseListController-Soyatec::Import->ca.ualberta.cs.miguel1_travel/ExpList" source="//@children.5" target="//@children.6" targetEnd="//@children.5/@sourceConnections.2/@children.2" label="//@children.5/@sourceConnections.2/@children.0" sourceEnd="//@children.5/@sourceConnections.2/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate, Call, Import»" size="127,12" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="53,121" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="128,5"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.7/@sourceConnections.0 //@children.7/@sourceConnections.1 //@children.5/@sourceConnections.2" name="ExpList" location="915,1245" size="128,193" id="ca.ualberta.cs.miguel1_travel/ExpList">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="105,198">
+      <children xsi:type="editmodel:MethodEditModel" name="ExpenseList" id="ca.ualberta.cs.miguel1_travel/ExpList#ExpenseList()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="addExp" id="ca.ualberta.cs.miguel1_travel/ExpList#addExp(Lca.ualberta.cs.miguel1_travel.Expense;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="addListener" id="ca.ualberta.cs.miguel1_travel/ExpList#addListener(Lca.ualberta.cs.miguel1_travel.Listener;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="contains" id="ca.ualberta.cs.miguel1_travel/ExpList#contains(Lca.ualberta.cs.miguel1_travel.Expense;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="deleteExp" id="ca.ualberta.cs.miguel1_travel/ExpList#deleteExp(Lca.ualberta.cs.miguel1_travel.Expense;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="indexofExp" id="ca.ualberta.cs.miguel1_travel/ExpList#indexofExp(Ljava.lang.Object;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="removeListener" id="ca.ualberta.cs.miguel1_travel/ExpList#removeListener(Lca.ualberta.cs.miguel1_travel.Listener;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="size" id="ca.ualberta.cs.miguel1_travel/ExpList#size()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="ca.ualberta.cs.miguel1_travel/ExpList@expenselist+ca.ualberta.cs.miguel1_travel/ExpenseListController@" source="//@children.6" target="//@children.5" targetEnd="//@children.6/@sourceConnections.0/@children.2" label="//@children.6/@sourceConnections.0/@children.0" sourceEnd="//@children.6/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,12" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="expenselist" location="52,0" id="ca.ualberta.cs.miguel1_travel/ExpList@expenselist+ca.ualberta.cs.miguel1_travel/ExpenseListController@|ca.ualberta.cs.miguel1_travel/ExpList#expenselist" attachSource="true" multiplicityLabel="//@children.6/@sourceConnections.0/@children.1/@children.2" roleLabel="//@children.6/@sourceConnections.0/@children.1/@children.0" orderingLabel="//@children.6/@sourceConnections.0/@children.1/@children.1" scopeKind="1" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - expenselist" location="896,1214" size="64,12" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="{order}" location="974,1226" size="38,12" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="1" location="954,1226" size="6,12" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="33,121" id="ca.ualberta.cs.miguel1_travel/ExpList@expenselist+ca.ualberta.cs.miguel1_travel/ExpenseListController@|ca.ualberta.cs.miguel1_travel/ExpenseListController#"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.miguel1_travel/ExpList-Soyatec::Import->ca.ualberta.cs.miguel1_travel/Expense" source="//@children.6" target="//@children.13" targetEnd="//@children.6/@sourceConnections.1/@children.2" label="//@children.6/@sourceConnections.1/@children.0" sourceEnd="//@children.6/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="44,12" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="128,72" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,102"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.miguel1_travel/ExpList-Standard::Call->ca.ualberta.cs.miguel1_travel/Listener*ca.ualberta.cs.miguel1_travel/ExpList-Soyatec::Import->ca.ualberta.cs.miguel1_travel/Listener" source="//@children.6" target="//@children.14" targetEnd="//@children.6/@sourceConnections.2/@children.2" label="//@children.6/@sourceConnections.2/@children.0" sourceEnd="//@children.6/@sourceConnections.2/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Call, Import»" size="68,12" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,53" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="98,39"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.8/@sourceConnections.2 //@children.3/@sourceConnections.3 //@children.12/@sourceConnections.0 //@children.4/@sourceConnections.5 //@children.1/@sourceConnections.1" name="Claim" location="764,869" size="141,265" id="ca.ualberta.cs.miguel1_travel/Claim">
+    <children xsi:type="editmodel:CompartmentEditModel" size="109,72">
+      <children xsi:type="editmodel:AttributeEditModel" name="destination" location="38,25" id="ca.ualberta.cs.miguel1_travel/Claim#destination"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="from" id="ca.ualberta.cs.miguel1_travel/Claim#from"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="reason" id="ca.ualberta.cs.miguel1_travel/Claim#reason"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="to" id="ca.ualberta.cs.miguel1_travel/Claim#to"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="118,162">
+      <children xsi:type="editmodel:MethodEditModel" name="Claim" id="ca.ualberta.cs.miguel1_travel/Claim#Claim(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="Claim" id="ca.ualberta.cs.miguel1_travel/Claim#Claim(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="equals" id="ca.ualberta.cs.miguel1_travel/Claim#equals(Lca.ualberta.cs.miguel1_travel.Claim;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="equals" id="ca.ualberta.cs.miguel1_travel/Claim#equals(Ljava.lang.Object;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getTotal" id="ca.ualberta.cs.miguel1_travel/Claim#getTotal()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="hashCode" id="ca.ualberta.cs.miguel1_travel/Claim#hashCode()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="outputEmailString" id="ca.ualberta.cs.miguel1_travel/Claim#outputEmailString()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toString" id="ca.ualberta.cs.miguel1_travel/Claim#toString()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="ca.ualberta.cs.miguel1_travel/ExpList@expenses+ca.ualberta.cs.miguel1_travel/Claim@" source="//@children.7" target="//@children.6" targetEnd="//@children.7/@sourceConnections.0/@children.2" label="//@children.7/@sourceConnections.0/@children.0" sourceEnd="//@children.7/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,12" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="141,255" id="ca.ualberta.cs.miguel1_travel/ExpList@expenses+ca.ualberta.cs.miguel1_travel/Claim@|ca.ualberta.cs.miguel1_travel/Claim#" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="expenses" location="10,0" id="ca.ualberta.cs.miguel1_travel/ExpList@expenses+ca.ualberta.cs.miguel1_travel/Claim@|ca.ualberta.cs.miguel1_travel/ExpList#expenses" multiplicityLabel="//@children.7/@sourceConnections.0/@children.2/@children.1" roleLabel="//@children.7/@sourceConnections.0/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - expenses" location="932,1226" size="54,12" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="900,1226" size="18,12" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.miguel1_travel/Claim-Standard::Call->ca.ualberta.cs.miguel1_travel/ExpList*ca.ualberta.cs.miguel1_travel/Claim-Standard::Instantiate->ca.ualberta.cs.miguel1_travel/ExpList*ca.ualberta.cs.miguel1_travel/Claim-Soyatec::Import->ca.ualberta.cs.miguel1_travel/ExpList" source="//@children.7" target="//@children.6" targetEnd="//@children.7/@sourceConnections.1/@children.2" label="//@children.7/@sourceConnections.1/@children.0" sourceEnd="//@children.7/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate, Call, Import»" size="127,12" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="136,265" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,19"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.miguel1_travel/Claim-Standard::Call->ca.ualberta.cs.miguel1_travel/Expense*ca.ualberta.cs.miguel1_travel/Claim-Soyatec::Import->ca.ualberta.cs.miguel1_travel/Expense" source="//@children.7" target="//@children.13" targetEnd="//@children.7/@sourceConnections.2/@children.2" label="//@children.7/@sourceConnections.2/@children.0" sourceEnd="//@children.7/@sourceConnections.2/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Call, Import»" size="68,12" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="141,179" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,41"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="AddClaimActivity" location="975,904" size="160,85" id="ca.ualberta.cs.miguel1_travel/AddClaimActivity">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="137,36">
+      <children xsi:type="editmodel:MethodEditModel" name="addnewClaim" id="ca.ualberta.cs.miguel1_travel/AddClaimActivity#addnewClaim(Landroid.view.View;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="onCreateOptionsMenu" id="ca.ualberta.cs.miguel1_travel/AddClaimActivity#onCreateOptionsMenu(Landroid.view.Menu;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.miguel1_travel/AddClaimActivity-Standard::Call->ca.ualberta.cs.miguel1_travel/ClaimListManager" source="//@children.8" target="//@children.9" targetEnd="//@children.8/@sourceConnections.0/@children.2" label="//@children.8/@sourceConnections.0/@children.0" sourceEnd="//@children.8/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Call»" size="30,12" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="72,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="92,211"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.miguel1_travel/AddClaimActivity-Standard::Call->ca.ualberta.cs.miguel1_travel/ClaimListController*ca.ualberta.cs.miguel1_travel/AddClaimActivity-Standard::Instantiate->ca.ualberta.cs.miguel1_travel/ClaimListController*ca.ualberta.cs.miguel1_travel/AddClaimActivity-Soyatec::Import->ca.ualberta.cs.miguel1_travel/ClaimListController" source="//@children.8" target="//@children.3" targetEnd="//@children.8/@sourceConnections.1/@children.2" label="//@children.8/@sourceConnections.1/@children.0" sourceEnd="//@children.8/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate, Call, Import»" size="127,12" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="48,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="153,175"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.miguel1_travel/AddClaimActivity-Standard::Instantiate->ca.ualberta.cs.miguel1_travel/Claim" source="//@children.8" target="//@children.7" targetEnd="//@children.8/@sourceConnections.2/@children.2" label="//@children.8/@sourceConnections.2/@children.0" sourceEnd="//@children.8/@sourceConnections.2/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate»" size="65,12" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,42" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="141,77"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.8/@sourceConnections.0 //@children.9/@sourceConnections.0 //@children.3/@sourceConnections.2 //@children.0/@sourceConnections.0 //@children.4/@sourceConnections.6 //@children.1/@sourceConnections.0 //@children.11/@sourceConnections.0 //@children.2/@sourceConnections.0 //@children.10/@sourceConnections.0" name="ClaimListManager" location="955,162" size="165,211" id="ca.ualberta.cs.miguel1_travel/ClaimListManager">
+    <children xsi:type="editmodel:CompartmentEditModel" size="89,36">
+      <children xsi:type="editmodel:AttributeEditModel" name="prefFile" id="ca.ualberta.cs.miguel1_travel/ClaimListManager#prefFile"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="slKey" id="ca.ualberta.cs.miguel1_travel/ClaimListManager#slKey"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="125,126">
+      <children xsi:type="editmodel:MethodEditModel" name="ClaimListManager" id="ca.ualberta.cs.miguel1_travel/ClaimListManager#ClaimListManager(Landroid.content.Context;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="claimListFromString" id="ca.ualberta.cs.miguel1_travel/ClaimListManager#claimListFromString(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getManager" id="ca.ualberta.cs.miguel1_travel/ClaimListManager#getManager()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="initManager" id="ca.ualberta.cs.miguel1_travel/ClaimListManager#initManager(Landroid.content.Context;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="loadClaimList" id="ca.ualberta.cs.miguel1_travel/ClaimListManager#loadClaimList()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="saveClaimList" id="ca.ualberta.cs.miguel1_travel/ClaimListManager#saveClaimList(Lca.ualberta.cs.miguel1_travel.Claim_List;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="studentListToString" id="ca.ualberta.cs.miguel1_travel/ClaimListManager#studentListToString(Lca.ualberta.cs.miguel1_travel.Claim_List;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="ca.ualberta.cs.miguel1_travel/ClaimListManager@claimlistmanager+ca.ualberta.cs.miguel1_travel/ClaimListManager@" source="//@children.9" target="//@children.9" targetEnd="//@children.9/@sourceConnections.0/@children.2" label="//@children.9/@sourceConnections.0/@children.0" sourceEnd="//@children.9/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,12" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="claimlistmanager" location="0,20" id="ca.ualberta.cs.miguel1_travel/ClaimListManager@claimlistmanager+ca.ualberta.cs.miguel1_travel/ClaimListManager@|ca.ualberta.cs.miguel1_travel/ClaimListManager#claimlistmanager" anchorKind="FixedAtEdge" attachSource="true" multiplicityLabel="//@children.9/@sourceConnections.0/@children.1/@children.2" roleLabel="//@children.9/@sourceConnections.0/@children.1/@children.0" orderingLabel="//@children.9/@sourceConnections.0/@children.1/@children.1" scopeKind="1" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - claimlistmanager" location="855,189" size="93,12" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="{order}" location="910,163" size="38,12" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="1" location="942,201" size="6,12" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="20,0" id="ca.ualberta.cs.miguel1_travel/ClaimListManager@claimlistmanager+ca.ualberta.cs.miguel1_travel/ClaimListManager@|ca.ualberta.cs.miguel1_travel/ClaimListManager#" anchorKind="FixedAtEdge"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="ca.ualberta.cs.miguel1_travel/ClaimListManager@claimlistmanager+ca.ualberta.cs.miguel1_travel/CustomAdapter@" source="//@children.9" target="//@children.1" targetEnd="//@children.9/@sourceConnections.1/@children.2" label="//@children.9/@sourceConnections.1/@children.0" sourceEnd="//@children.9/@sourceConnections.1/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,12" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="claimlistmanager" location="0,128" id="ca.ualberta.cs.miguel1_travel/ClaimListManager@claimlistmanager+ca.ualberta.cs.miguel1_travel/CustomAdapter@|ca.ualberta.cs.miguel1_travel/ClaimListManager#claimlistmanager" attachSource="true" multiplicityLabel="//@children.9/@sourceConnections.1/@children.1/@children.2" roleLabel="//@children.9/@sourceConnections.1/@children.1/@children.0" orderingLabel="//@children.9/@sourceConnections.1/@children.1/@children.1" scopeKind="1" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - claimlistmanager" location="855,259" size="93,12" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="{order}" location="910,297" size="38,12" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="930,271" size="18,12" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="134,0" id="ca.ualberta.cs.miguel1_travel/ClaimListManager@claimlistmanager+ca.ualberta.cs.miguel1_travel/CustomAdapter@|ca.ualberta.cs.miguel1_travel/CustomAdapter#"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.miguel1_travel/ClaimListManager-Standard::Instantiate->ca.ualberta.cs.miguel1_travel/Claim_List*ca.ualberta.cs.miguel1_travel/ClaimListManager-Soyatec::Import->ca.ualberta.cs.miguel1_travel/Claim_List" source="//@children.9" target="//@children.12" targetEnd="//@children.9/@sourceConnections.2/@children.2" label="//@children.9/@sourceConnections.2/@children.0" sourceEnd="//@children.9/@sourceConnections.2/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate, Import»" size="103,12" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,209" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="128,15"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.3/@sourceConnections.1" name="MainActivity" location="541,50" size="160,121" id="ca.ualberta.cs.miguel1_travel/MainActivity">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="137,72">
+      <children xsi:type="editmodel:MethodEditModel" name="addClaim" id="ca.ualberta.cs.miguel1_travel/MainActivity#addClaim(Landroid.view.MenuItem;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="editClaim" id="ca.ualberta.cs.miguel1_travel/MainActivity#editClaim(Landroid.view.MenuItem;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="onCreateOptionsMenu" id="ca.ualberta.cs.miguel1_travel/MainActivity#onCreateOptionsMenu(Landroid.view.Menu;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="viewExpenseofClaim" id="ca.ualberta.cs.miguel1_travel/MainActivity#viewExpenseofClaim(Landroid.view.MenuItem;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.miguel1_travel/MainActivity-Standard::Call->ca.ualberta.cs.miguel1_travel/ClaimListManager" source="//@children.10" target="//@children.9" targetEnd="//@children.10/@sourceConnections.0/@children.2" label="//@children.10/@sourceConnections.0/@children.0" sourceEnd="//@children.10/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Call»" size="30,12" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="160,116" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,4"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.miguel1_travel/MainActivity-Standard::Call->ca.ualberta.cs.miguel1_travel/ClaimListController*ca.ualberta.cs.miguel1_travel/MainActivity-Soyatec::Import->ca.ualberta.cs.miguel1_travel/ClaimListController" source="//@children.10" target="//@children.3" targetEnd="//@children.10/@sourceConnections.1/@children.2" label="//@children.10/@sourceConnections.1/@children.0" sourceEnd="//@children.10/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Call, Import»" size="68,12" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="118,121" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,19"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.miguel1_travel/MainActivity-Standard::Call->ca.ualberta.cs.miguel1_travel/Claim_List" source="//@children.10" target="//@children.12" targetEnd="//@children.10/@sourceConnections.2/@children.2" label="//@children.10/@sourceConnections.2/@children.0" sourceEnd="//@children.10/@sourceConnections.2/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Call»" size="30,12" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="54,121" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="72,0"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="EditExpActivity" location="1064,540" size="160,139" id="ca.ualberta.cs.miguel1_travel/EditExpActivity">
+    <children xsi:type="editmodel:CompartmentEditModel" size="103,54">
+      <children xsi:type="editmodel:AttributeEditModel" name="category" id="ca.ualberta.cs.miguel1_travel/EditExpActivity#category"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="currency" id="ca.ualberta.cs.miguel1_travel/EditExpActivity#currency"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="exp" id="ca.ualberta.cs.miguel1_travel/EditExpActivity#exp"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="137,36">
+      <children xsi:type="editmodel:MethodEditModel" name="editExp" id="ca.ualberta.cs.miguel1_travel/EditExpActivity#editExp(Landroid.view.View;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="onCreateOptionsMenu" id="ca.ualberta.cs.miguel1_travel/EditExpActivity#onCreateOptionsMenu(Landroid.view.Menu;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.miguel1_travel/EditExpActivity-Standard::Call->ca.ualberta.cs.miguel1_travel/ClaimListManager" source="//@children.11" target="//@children.9" targetEnd="//@children.11/@sourceConnections.0/@children.2" label="//@children.11/@sourceConnections.0/@children.0" sourceEnd="//@children.11/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Call»" size="30,12" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="27,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="136,211"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.miguel1_travel/EditExpActivity-Standard::Call->ca.ualberta.cs.miguel1_travel/ExpenseListController*ca.ualberta.cs.miguel1_travel/EditExpActivity-Standard::Instantiate->ca.ualberta.cs.miguel1_travel/ExpenseListController*ca.ualberta.cs.miguel1_travel/EditExpActivity-Soyatec::Import->ca.ualberta.cs.miguel1_travel/ExpenseListController" source="//@children.11" target="//@children.5" targetEnd="//@children.11/@sourceConnections.1/@children.2" label="//@children.11/@sourceConnections.1/@children.0" sourceEnd="//@children.11/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate, Call, Import»" size="127,12" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="133,139" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="25,0"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.9/@sourceConnections.2 //@children.3/@sourceConnections.0 //@children.3/@sourceConnections.4 //@children.4/@sourceConnections.4 //@children.1/@sourceConnections.2 //@children.10/@sourceConnections.2" name="Claim_List" location="523,739" size="128,193" id="ca.ualberta.cs.miguel1_travel/Claim_List">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="105,180">
+      <children xsi:type="editmodel:MethodEditModel" name="Claim_List" id="ca.ualberta.cs.miguel1_travel/Claim_List#Claim_List()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="addClaim" id="ca.ualberta.cs.miguel1_travel/Claim_List#addClaim(Lca.ualberta.cs.miguel1_travel.Claim;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="addListener" id="ca.ualberta.cs.miguel1_travel/Claim_List#addListener(Lca.ualberta.cs.miguel1_travel.Listener;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="contains" id="ca.ualberta.cs.miguel1_travel/Claim_List#contains(Lca.ualberta.cs.miguel1_travel.Claim;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="indexOf" id="ca.ualberta.cs.miguel1_travel/Claim_List#indexOf(Ljava.lang.Object;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="removeClaim" id="ca.ualberta.cs.miguel1_travel/Claim_List#removeClaim(Lca.ualberta.cs.miguel1_travel.Claim;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="removeListener" id="ca.ualberta.cs.miguel1_travel/Claim_List#removeListener(Lca.ualberta.cs.miguel1_travel.Listener;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="size" id="ca.ualberta.cs.miguel1_travel/Claim_List#size()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.miguel1_travel/Claim_List-Soyatec::Import->ca.ualberta.cs.miguel1_travel/Claim" source="//@children.12" target="//@children.7" targetEnd="//@children.12/@sourceConnections.0/@children.2" label="//@children.12/@sourceConnections.0/@children.0" sourceEnd="//@children.12/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="44,12" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="128,161" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,31"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="ca.ualberta.cs.miguel1_travel/Claim_List-Standard::Call->ca.ualberta.cs.miguel1_travel/Listener*ca.ualberta.cs.miguel1_travel/Claim_List-Soyatec::Import->ca.ualberta.cs.miguel1_travel/Listener" source="//@children.12" target="//@children.14" targetEnd="//@children.12/@sourceConnections.1/@children.2" label="//@children.12/@sourceConnections.1/@children.0" sourceEnd="//@children.12/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Call, Import»" size="68,12" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="62,193" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="48,0"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.7/@sourceConnections.2 //@children.6/@sourceConnections.1 //@children.5/@sourceConnections.1" name="Expense" location="1215,1215" size="139,175" id="ca.ualberta.cs.miguel1_travel/Expense">
+    <children xsi:type="editmodel:CompartmentEditModel" size="116,90">
+      <children xsi:type="editmodel:AttributeEditModel" name="amount" id="ca.ualberta.cs.miguel1_travel/Expense#amount"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="category" id="ca.ualberta.cs.miguel1_travel/Expense#category"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="date" id="ca.ualberta.cs.miguel1_travel/Expense#date"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="description" id="ca.ualberta.cs.miguel1_travel/Expense#description"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="name" id="ca.ualberta.cs.miguel1_travel/Expense#name"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="70,72">
+      <children xsi:type="editmodel:MethodEditModel" name="Expense" id="ca.ualberta.cs.miguel1_travel/Expense#Expense(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toString" id="ca.ualberta.cs.miguel1_travel/Expense#toString()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:InterfaceEditModel" targetConnections="//@children.12/@sourceConnections.1 //@children.6/@sourceConnections.2" name="Listener" location="537,1259" size="98,79" id="ca.ualberta.cs.miguel1_travel/Listener">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="64,18">
+      <children xsi:type="editmodel:MethodEditModel" name="update" id="ca.ualberta.cs.miguel1_travel/Listener#update()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" level="-1" showScope="InPackage" properties="wireOptions=7;Product=eUML2"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel" gridVisibility="false">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showPopupBars="true" showConnectionHandles="true" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" showDependencyStereotype="true" showInterfaceStereotype="true" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>

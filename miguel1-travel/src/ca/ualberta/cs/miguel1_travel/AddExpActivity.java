@@ -8,11 +8,11 @@ import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
-
+//activity consist in adding an expense to a claim
 public class AddExpActivity extends Activity {
 	private Spinner category;
 	private Spinner currency;
-	//spinner code taken from youtube video: Android spinner example, by raghav shetty, link watch?v=o7Om-iUoiio on jan 16 2015
+	//spinner code based from youtube video: Android spinner example, by raghav shetty, link watch?v=o7Om-iUoiio accessed on jan 16 2015
 		
 	
 	@Override
@@ -30,8 +30,7 @@ public class AddExpActivity extends Activity {
 	    ArrayAdapter<CharSequence> cur = ArrayAdapter.createFromResource(this,R.array.Currency, android.R.layout.simple_list_item_1);
 	    cur.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
 	    currency.setAdapter(cur);
-	    
-	    
+	    	    
 	}
 
 	@Override
@@ -40,8 +39,9 @@ public class AddExpActivity extends Activity {
 		getMenuInflater().inflate(R.menu.add_exp, menu);
 		return true;
 	}
+	//button action to add new expense
 	public void addnewExp(View v){
-		Toast.makeText(this, "add exp", Toast.LENGTH_SHORT).show();
+		
 		ExpenseListController ae= new ExpenseListController();
 		EditText date = (EditText) findViewById(R.id.new_exp_dest_ins);
 		category = (Spinner) findViewById(R.id.select_edit_claim);
@@ -51,6 +51,7 @@ public class AddExpActivity extends Activity {
 		EditText name = (EditText) findViewById(R.id.name_of_exp);
 		
 		ae.addExp(name.getText().toString(), date.getText().toString(), category,description.getText().toString(),amount.getText().toString(), currency);
+		Toast.makeText(this, "add exp", Toast.LENGTH_SHORT).show();
 	}
 
 }

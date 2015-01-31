@@ -19,78 +19,36 @@ import android.widget.Spinner;
 import android.widget.Toast;
 //import android.widget.Toast;
 import android.widget.AdapterView.OnItemLongClickListener;
-
+//List the expenses according to the claims
+/**
+ * @author  miguel1
+ */
 public class ListExpActivity extends Activity {
 	
+	/**
+	 * @uml.property  name="exp"
+	 * @uml.associationEnd  
+	 */
 	private  ExpenseListController exp;
 	Spinner claim;
+	ArrayAdapter<String> claimadapter;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.view_exp);
-		 ClaimListManager.initManager(this.getApplicationContext());
+		 
+		ClaimListManager.initManager(this.getApplicationContext());
+		 
+		claim=(Spinner) findViewById(R.id.select_claim_list);
+		claimadapter=new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, new ArrayList<String>());
+		claimadapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+		claim.setAdapter(claimadapter);
+		 
+		 
 		
 		
-		ListView listView=(ListView) findViewById(R.id.expense_listview);
-		Collection<Expense> expenses = ExpenseListController.getExpenseList().getExpenses();
 		
-		//final ArrayList<Expense> list = new ArrayList<Expense>(expenses);
-		/*
-		
-		final ArrayAdapter<Expense> expenseAdapter= new ArrayAdapter<Expense>(this, android.R.layout.simple_list_item_1, list);
-		listView.setAdapter(expenseAdapter);
-		
-		
-		 ExpenseListController.getExpenseList().addListener(new Listener(){
-	    	   public void update(){
-	    		   list.clear();
-	    		   Collection<Expense> expenses= ExpenseListController.getExpenseList().getExpenses(); 
-	    		   list.addAll(expenses);
-	    		   expenseAdapter.notifyDataSetChanged();
-	    	   }
-	       });
-	       
-	       
-	       
-	       //delete by long click
-	       listView.setOnItemLongClickListener(new OnItemLongClickListener() {
-
-			@Override
-			public boolean onItemLongClick(AdapterView<?> adapterView, View view,
-					int position, long id) {
-				// TODO Auto-generated method stub
-				
-				AlertDialog.Builder adb = new AlertDialog.Builder(ListExpActivity.this);
-				adb.setMessage("DELETE "+list.get(position).toString()+"?");
-				adb.setCancelable(true);
-				final int finalPosition = position;
-				adb.setPositiveButton("DELETE", new OnClickListener(){
-
-					@Override
-					public void onClick(DialogInterface dialog, int which) {
-						Expense expense= list.get(finalPosition);
-						ExpenseListController.getExpenseList().deleteExp(expense);
-						
-					}
-					
-				});
-				adb.setNegativeButton("CANCEL",new OnClickListener(){
-
-					@Override
-					public void onClick(DialogInterface dialog, int which) {
-						// TODO Auto-generated method stub
-						
-					}
-					
-				});
-				
-				adb.show();
-				
-				return false;
-			}
-	    	   
-		});*/
 	        
 	    
 	}
@@ -112,10 +70,6 @@ public class ListExpActivity extends Activity {
     	Intent intent = new Intent(ListExpActivity.this, AddExpActivity.class);
     	startActivity(intent);
     }
-    public void deleteExp(MenuItem menu){
-    	//Toast.makeText(this, "delete claim", Toast.LENGTH_SHORT).show();
-    	Intent intent = new Intent(ListExpActivity.this, DeleteExpActivity.class);
-    	startActivity(intent);
-    }
+
     
 }

@@ -1,11 +1,14 @@
 package ca.ualberta.cs.miguel1_travel;
 
 import android.os.Bundle;
+
 import android.app.Activity;
 import android.view.Menu;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
+
+//Activity consisting on adding a claim
 
 public class AddClaimActivity extends Activity {
 
@@ -22,6 +25,7 @@ public class AddClaimActivity extends Activity {
 		getMenuInflater().inflate(R.menu.add_claim, menu);
 		return true;
 	}
+	//button action on adding claim
 	public void addnewClaim(View v){
 		
 		ClaimListController cl= new ClaimListController();
